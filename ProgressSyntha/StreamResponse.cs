@@ -1,4 +1,6 @@
+using ProgressSyntha;
+
 public class StreamResponse
 {
-    public Item? Item { get; set; }
+   public RAGContent Item { get; set; }
 }

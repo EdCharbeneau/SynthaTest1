@@ -1,87 +1,68 @@
+namespace ProgressSyntha;
 using System.Text.Json.Serialization;
 
 public class Item
 {
-	public string Type { get; set; } // "answer" or "retrieval"
-	public string Text { get; set; }
-	public Results Results { get; set; }
+	public RAGContent RAGContent { get; set; }
 }
 
 public class Results
 {
-	public Dictionary<string, Resource> Resources { get; set; }
+	public Dictionary<string, Resource> Resources { get; set; } = new();
 }
 
-public class Resource
+public record Resource(string Id,
+					   string? Slug,
+					   string? Title,
+					   string? Summary,
+					   string? Icon,
+					   string? Thumbnail,
+					   string Created,
+					   int LastSeqId,
+					   string? Queue,
+					   bool Hidden)
 {
-	public string Id { get; set; }
-	public string Slug { get; set; }
-	public string Title { get; set; }
-	public string Summary { get; set; }
-	public string Icon { get; set; }
-	public string Thumbnail { get; set; }
-	public Metadata Metadata { get; set; }
+	public Metadata Metadata { get; set; } = new();
 	//public UserMetadata UserMetadata { get; set; }
 	//public List<object> FieldMetadata { get; set; }
-	public ComputedMetadata ComputedMetadata { get; set; }
-	public string Created { get; set; }
-	public int LastSeqId { get; set; }
-	public string Queue { get; set; }
-	public bool Hidden { get; set; }
-	public Data Data { get; set; }
+	public ComputedMetadata ComputedMetadata { get; set; } = new();
+	public Data Data { get; set; } = new();
 }
 
 public class Metadata
 {
-	public Dictionary<string, object> MetadataDetails { get; set; }
-	public string Language { get; set; }
-	public List<string> Languages { get; set; }
-	public string Status { get; set; }
+	public Dictionary<string, object> MetadataDetails { get; set; } = new();
+	public string? Language { get; set; }
+	public List<string> Languages { get; set; } = new();
+	public string? Status { get; set; }
 }
 
 public class UserMetadata
 {
-	public List<string> Classifications { get; set; }
-	public List<object> Relations { get; set; }
+	public List<string> Classifications { get; set; } = new();
+	public List<object> Relations { get; set; } = new();
 }
 
 public class ComputedMetadata
 {
-	public List<FieldClassification> FieldClassifications { get; set; }
+	public List<FieldClassification> FieldClassifications { get; set; } = new();
 }
 
 public class FieldClassification
 {
-	public Field Field { get; set; }
-	public List<Classification> Classifications { get; set; }
+	public Field? Field { get; set; } 
+	public List<Classification> Classifications { get; set; } = new();
 }
 
-public class Field
-{
-	public string FieldType { get; set; }
-	public string FieldName { get; set; }
-}
+public record Field(string? FieldType, string? FieldName);
 
-public class Classification
-{
-	public string LabelSet { get; set; }
-	public string Label { get; set; }
-}
+public record Classification(string? LabelSet, string? Label);
+
 public class Data
 {
-	public Dictionary<string, TextValueWrapper> Texts { get; set; }
+	public Dictionary<string, TextValueWrapper> Texts { get; set; } = new();
 }
 
-public class TextValueWrapper
-{
-	[JsonPropertyName("value")]
-	public TextValue Item { get; set; }
-}
+public record TextValueWrapper([property: JsonPropertyName("value")] TextValue? Item);
 
-public class TextValue
-{
-	public string Body { get; set; }
-	public string Format { get; set; }
-	public string Md5 { get; set; }
-	public string ExtractStrategy { get; set; }
-}
+public record TextValue(string? Body, string? Format, string? Md5, string? ExtractStrategy);
