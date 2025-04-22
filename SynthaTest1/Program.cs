@@ -2,7 +2,7 @@
 using System.Net.Http.Json;
 using System.Text.Json;
 
-var syntha = new Syntha(new HttpClient());
+var syntha = new SynthaClient(new HttpClient());
 
 var results = syntha.Ask("What is syntha");
 
