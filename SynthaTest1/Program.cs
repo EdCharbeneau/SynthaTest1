@@ -11,66 +11,45 @@ var syntha = new SynthaClient(config);
 
 var results = syntha.Ask("What is syntha");
 
-	await foreach (var result in results)
+await foreach (var result in results)
+{
+	switch (result.Item)
 	{
-		switch (result.Item)
-		{
-			case AnswerContent answer:
-				Console.Write(answer.Text);
-				break;
+		case AnswerContent answer:
+			Console.Write(answer.Text);
+			break;
 
-			case CitationsContent citation:
-				Console.WriteLine();
-				foreach (var citationItem in citation.Citations)
+		case CitationsContent citation:
+			Console.WriteLine();
+			foreach (var citationItem in citation.Citations)
+			{
+				Console.WriteLine($"|- {citationItem.Key}");
+				foreach (var item in citationItem.Value)
 				{
-					Console.WriteLine($"|- {citationItem.Key}");
-					foreach (var item in citationItem.Value)
-					{
-						Console.WriteLine($"|- {item}");
-					}
+					Console.WriteLine($"|- {item}");
 				}
-				break;
+			}
+			break;
 
-			case RetrievalContent retrieval when retrieval.Results is not null:
-				Console.WriteLine();
-				Console.WriteLine("--- Resources ---");
-				foreach (var resource in retrieval.Results.Resources)
+		case RetrievalContent retrieval when retrieval.Results is not null:
+			Console.WriteLine();
+			Console.WriteLine("--- Resources ---");
+			foreach (var resource in retrieval.Results.Resources)
+			{
+				Console.WriteLine($"|- {resource.Key}");
+				Console.WriteLine($"|- Thumbnail: {resource.Value.Thumbnail}");
+				foreach (var t in resource.Value.Data.Texts)
 				{
-					Console.WriteLine($"|- {resource.Key}");
-					Console.WriteLine($"|- Thumbnail: {resource.Value.Thumbnail}");
-					foreach (var t in resource.Value.Data.Texts)
-					{
-						Console.WriteLine($"|- Meta: {t.Value.Item.Body}");
-					}
+					Console.WriteLine($"|- Meta: {t.Value?.Item?.Body}");
 				}
-				break;
+			}
+			break;
 
-			default:
-				break;
-		}
+		default:
+			break;
 	}
+}
 
-
-	//if (result.Item?.Type == "answer")
-	//{
-	//	Console.Write(result?.Item?.Text);
-	//}
-	//if (result?.Item?.Type == "retrieval" && result.Item is not null)
-	//{
-	//	Console.WriteLine();
-	//	Console.WriteLine("--- Resources ---");
-	//	if (result.Item is { Type: "retrieval" } retrievalItem && retrievalItem.Results is not null)
-	//	{
-	//		foreach (var resource in retrievalItem.Results.Resources)
-	//		{
-	//			Console.WriteLine($"|- {resource.Key}");
-	//			Console.WriteLine($"|- Thumbnail: {resource.Value.Thumbnail}");
-	//			foreach (var t in resource.Value.Data.Texts)
-	//				Console.WriteLine($"|- Meta: {t.Value.Item.Body}");
-	//		}
-	//	}
-	//}
-//}
 Console.WriteLine();
 Console.WriteLine("-- done");
 Console.ReadLine();
