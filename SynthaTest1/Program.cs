@@ -1,4 +1,7 @@
 ﻿using ProgressSyntha;
+using Spectre.Console;
+using Spectre.Console.Json;
+using System.Text.Json;
 
 var config = new SynthaConfig(ZoneId: "progress-proc-us-east-2-1",
 	KnowledgeBaseId: "886a82a2-b0d6-400d-9907-9b8c0567681a",
@@ -7,47 +10,66 @@ var config = new SynthaConfig(ZoneId: "progress-proc-us-east-2-1",
 var syntha = new SynthaClient(config);
 
 var results = syntha.Ask("What is syntha");
-
-
-await foreach (var result in results)
-{
-	switch (result.Item)
+Tree root = new("Response");
+var acn = root.AddNode("Answer:");
+string streamingText = "";
+await AnsiConsole.Live(root)
+	.StartAsync(async ctx =>
 	{
-		case AnswerContent answer:
-			Console.Write(answer.Text);
-			break;
-
-		case CitationsContent citation:
-			Console.WriteLine();
-			foreach (var citationItem in citation.Citations)
+		await foreach (var result in results)
+		{
+			switch (result.Item)
 			{
-				Console.WriteLine($"|- {citationItem.Key}");
-				foreach (var item in citationItem.Value)
-				{
-					Console.WriteLine($"|- {item}");
-				}
+				case AnswerContent answer:
+					streamingText += answer.Text;
+					root.Nodes.Remove(acn);
+					acn = root.AddNode($"Answer: {streamingText}".EscapeMarkup());
+					ctx.Refresh();
+					break;
+
+				case CitationsContent citation:
+					foreach (var citationItem in citation.Citations)
+					{
+						var cite = root.AddNode($"Citation: {citationItem.Key}".EscapeMarkup());
+						foreach (var item in citationItem.Value)
+						{
+							cite.AddNode($"{item}".EscapeMarkup());
+						}
+					}
+					ctx.Refresh();
+					break;
+
+				case RetrievalContent retrieval when retrieval.Results is not null:
+					var res = root.AddNode($"Resources");
+					foreach (var resource in retrieval.Results.Resources)
+					{
+						//res.AddNode(resource.Key);
+						var key = res.AddNode($"Thumbnail: {resource.Value.Thumbnail}".EscapeMarkup());
+						foreach (var t in resource.Value.Data.Texts)
+						{
+							var body = t.Value?.Item?.Body;
+							if (!string.IsNullOrWhiteSpace(body))
+							{
+								try
+								{
+									// Try to parse as JSON
+									using var doc = JsonDocument.Parse(body);
+									key.AddNode(new JsonText(body));
+								}
+								catch (JsonException)
+								{
+									key.AddNode(body.EscapeMarkup());
+								}
+								ctx.Refresh();
+							}
+						}
+					}
+					break;
+
+				default:
+					break;
 			}
-			break;
+		}
+	});
 
-		case RetrievalContent retrieval when retrieval.Results is not null:
-			Console.WriteLine();
-			Console.WriteLine("--- Resources ---");
-			foreach (var resource in retrieval.Results.Resources)
-			{
-				Console.WriteLine($"|- {resource.Key}");
-				Console.WriteLine($"|- Thumbnail: {resource.Value.Thumbnail}");
-				foreach (var t in resource.Value.Data.Texts)
-				{
-					Console.WriteLine($"|- Meta: {t.Value?.Item?.Body}");
-				}
-			}
-			break;
-
-		default:
-			break;
-	}
-}
-
-Console.WriteLine();
-Console.WriteLine("-- done");
-Console.ReadLine();
+AnsiConsole.Write(new Rule("[yellow bold underline]--done[/]").RuleStyle("grey").LeftJustified());
