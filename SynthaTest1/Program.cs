@@ -1,7 +1,4 @@
 ﻿using ProgressSyntha;
-using System.Net.Http.Json;
-using System.Text.Json;
-using static System.Net.WebRequestMethods;
 
 var config = new SynthaConfig(ZoneId: "progress-proc-us-east-2-1",
 	KnowledgeBaseId: "886a82a2-b0d6-400d-9907-9b8c0567681a",
@@ -10,6 +7,7 @@ var config = new SynthaConfig(ZoneId: "progress-proc-us-east-2-1",
 var syntha = new SynthaClient(config);
 
 var results = syntha.Ask("What is syntha");
+
 
 await foreach (var result in results)
 {
