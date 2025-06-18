@@ -1,5 +1,6 @@
 ﻿@page "/"
 @using ProgressSyntha;
+@using ProgressSyntha.Models
 
 @inject SynthaConfig config
 @inject NucliaDbClient client
@@ -8,12 +9,30 @@
 
 <h1>@connectionMessage</h1>
 
+<p>@streamingResponse</p>
+
 @code {
     string connectionMessage = "Not Connected";
+    string streamingResponse = "...";
 
     protected override async Task OnInitializedAsync()
     {
         await ConnectToKnowledgeBox();
+        await SimpleAsk();
+    }
+
+    private async Task SimpleAsk()
+    {
+        var response = client.Search.AskStreamAsync(
+            new AskRequest
+            {
+                Query = "What is Syntha?"
+            });
+
+        await foreach (var item in response)
+        {
+            streamingResponse += item.Data;
+        }
     }
 
     private async Task ConnectToKnowledgeBox()
