@@ -4,8 +4,14 @@ using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Runtime.CompilerServices;
 using System.Text.Json;
+using ProgressSyntha.Models;
 
 namespace ProgressSyntha;
+
+/// <summary>
+/// Legacy SynthaClient - use NucliaDbClient for new applications
+/// </summary>
+[Obsolete("Use NucliaDbClient instead. This class is maintained for backward compatibility.")]
 public class SynthaClient
 {
 	private readonly HttpClient http;
@@ -26,18 +32,30 @@ public class SynthaClient
 	private readonly JsonSerializerOptions jsonOptions = new(JsonSerializerDefaults.Web);
 	private string Endpoint => $"https://{config.ZoneId}.syntha.progress.com/api/v1/kb/{config.KnowledgeBaseId}/ask";
 
-	private RequestPayload defaultOptions = new RequestPayload(default, new[] { "basic", "values", "origin" }, new[] { "keyword", "semantic" }, false, true, true, true, false, "predict", false, new[]
+	private AskRequest defaultOptions = new AskRequest
+	{
+		Query = string.Empty,
+		Show = new[] { "basic", "values", "origin" },
+		Features = new[] { "keyword", "semantic" },
+		Highlight = false,
+		Citations = true,
+		Rephrase = true,
+		Debug = true,
+		ShowHidden = false,
+		Reranker = "predict",
+		Autofilter = false,
+		RagStrategies = new[]
+		{
+			new RagStrategy
 			{
-				new RagStrategy
-				{
-					Name = "neighbouring_paragraphs",
-					Before = 2,
-					After = 2
-				}
-			},
-		Array.Empty<object>(),
-		Array.Empty<object>()
-	);
+				Name = "neighbouring_paragraphs",
+				Before = 2,
+				After = 2
+			}
+		},
+		Context = Array.Empty<object>(),
+		Filters = Array.Empty<object>()
+	};
 
 	public async IAsyncEnumerable<StreamResponse> Ask(string query = "What is syntha", [EnumeratorCancellation] CancellationToken cancellationToken = default)
 	{

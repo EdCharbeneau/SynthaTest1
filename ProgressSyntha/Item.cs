@@ -1,4 +1,4 @@
-namespace ProgressSyntha;
+namespace ProgressSyntha.Models;
 using System.Text.Json.Serialization;
 
 public class Item

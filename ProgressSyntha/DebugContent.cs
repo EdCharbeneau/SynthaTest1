@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace ProgressSyntha;
+namespace ProgressSyntha.Models;
 
 public class DebugContent : RAGContent
 {
 	[JsonPropertyName("type")]
-	public string Type { get; set; } = "debug";
+	public new string Type { get; set; } = "debug";
 
 	[JsonPropertyName("metadata")]
 	public DebugMetadata Metadata { get; set; } = new DebugMetadata();

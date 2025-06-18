@@ -1,6 +1,2 @@
-using ProgressSyntha;
-
-public class StreamResponse
-{
-   public RAGContent Item { get; set; }
-}
+// This file has been moved to Models/Search.cs
+// Use ProgressSyntha.Models.StreamResponse instead
