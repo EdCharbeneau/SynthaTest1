@@ -1,7 +1,26 @@
 ﻿@page "/"
+@using ProgressSyntha;
+
+@inject SynthaConfig config
+@inject NucliaDbClient client
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>@connectionMessage</h1>
 
-Welcome to your new app.
+@code {
+    string connectionMessage = "Not Connected";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await ConnectToKnowledgeBox();
+    }
+
+    private async Task ConnectToKnowledgeBox()
+    {
+        var response = await client.KnowledgeBoxes.GetKnowledgeBoxAsync(config.KnowledgeBaseId);
+            
+        connectionMessage = $"{response?.Data?.Title} ({response?.Data?.Uuid})";
+
+    }
+}
