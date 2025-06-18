@@ -62,7 +62,7 @@ public class CatalogRequest
 public class KnowledgeboxSearchResults
 {
     [JsonPropertyName("resources")]
-    public KnowledgeboxResource[] Resources { get; set; } = Array.Empty<KnowledgeboxResource>();
+    public Dictionary<string, KnowledgeboxResource> Resources { get; set; } = new Dictionary<string, KnowledgeboxResource>();
 
     [JsonPropertyName("facets")]
     public Dictionary<string, object>? Facets { get; set; }
@@ -78,6 +78,12 @@ public class KnowledgeboxSearchResults
 
     [JsonPropertyName("query")]
     public string? Query { get; set; }
+
+    /// <summary>
+    /// Helper property to get resources as an enumerable
+    /// </summary>
+    [JsonIgnore]
+    public IEnumerable<KnowledgeboxResource> ResourceList => Resources.Values;
 }
 
 /// <summary>

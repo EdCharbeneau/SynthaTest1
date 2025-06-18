@@ -75,7 +75,7 @@ public class SdkUsageExample
         if (catalogResult.Success && catalogResult.Data != null)
         {
             Console.WriteLine($"Found {catalogResult.Data.Total} total resources");
-            foreach (var resource in catalogResult.Data.Resources.Take(3))
+            foreach (var resource in catalogResult.Data.ResourceList.Take(3))
             {
                 Console.WriteLine($"- {resource.Title} (ID: {resource.Id})");
                 Console.WriteLine($"  Created: {resource.Created:yyyy-MM-dd}");
@@ -102,7 +102,7 @@ public class SdkUsageExample
         if (advancedCatalogResult.Success && advancedCatalogResult.Data != null)
         {
             Console.WriteLine($"Advanced search found {advancedCatalogResult.Data.Total} resources");
-            foreach (var resource in advancedCatalogResult.Data.Resources.Take(2))
+            foreach (var resource in advancedCatalogResult.Data.ResourceList.Take(2))
             {
                 Console.WriteLine($"- {resource.Title}");
                 Console.WriteLine($"  Modified: {resource.Modified:yyyy-MM-dd HH:mm}");

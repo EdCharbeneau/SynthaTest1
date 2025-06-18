@@ -40,16 +40,17 @@ AnsiConsole.MarkupLine("[green]New NucliaDbClient SDK:[/]");
 using var client = new NucliaDbClient(config);
 
 try
-{
-    // Test Knowledge Box info
+{    // Test Knowledge Box info
     AnsiConsole.MarkupLine("[dim]Getting Knowledge Box information...[/]");
-    var kbResult = await client.KnowledgeBoxes.GetKnowledgeBoxAsync(config.KnowledgeBaseId);    if (kbResult.Success && kbResult.Data != null)
+    var kbResult = await client.KnowledgeBoxes.GetKnowledgeBoxAsync(config.KnowledgeBaseId);
+    if (kbResult.Success && kbResult.Data != null)
     {
         var title = kbResult.Data.Title ?? "Untitled";
         var uuid = kbResult.Data.Uuid ?? "Unknown";
         AnsiConsole.MarkupLine($"[green]✓[/] Knowledge Box: {title.EscapeMarkup()}");
         AnsiConsole.MarkupLine($"[dim]  UUID: {uuid.EscapeMarkup()}[/]");
-    }    else
+    }
+    else
     {
         var errorMsg = kbResult.Error ?? "Unknown error";
         AnsiConsole.MarkupLine($"[red]✗[/] Error: {errorMsg.EscapeMarkup()}");
@@ -63,8 +64,9 @@ try
         Query = "What is Progress Syntha?",
         TopK = 5,
         Citations = true,
-        Debug = false
-    };    var askResult = await client.Search.AskAsync(askRequest);
+        Debug = false    };
+
+    var askResult = await client.Search.AskAsync(askRequest);
     if (askResult.Success && askResult.Data != null)
     {
         var answerText = askResult.Data.Answer ?? "No answer";
@@ -75,8 +77,8 @@ try
         if (askResult.Data.RetrievalBestMatches != null)
         {
             AnsiConsole.MarkupLine($"[dim]  Sources: {askResult.Data.RetrievalBestMatches.Length} relevant results[/]");
-        }
-    }else
+        }    }
+    else
     {
         var errorMsg = askResult.Error ?? "Unknown error";
         AnsiConsole.MarkupLine($"[red]✗[/] Error: {errorMsg.EscapeMarkup()}");
@@ -85,16 +87,16 @@ try
     // Test catalog/search
     AnsiConsole.WriteLine();
     AnsiConsole.MarkupLine("[dim]Searching resources catalog...[/]");
-    var catalogResult = await client.Search.CatalogAsync("", pageSize: 5);
-    if (catalogResult.Success && catalogResult.Data != null)
+    var catalogResult = await client.Search.CatalogAsync("", pageSize: 5);    if (catalogResult.Success && catalogResult.Data != null)
     {
         AnsiConsole.MarkupLine($"[green]✓[/] Found {catalogResult.Data.Total} total resources");
-        foreach (var resource in catalogResult.Data.Resources.Take(3))
+        foreach (var resource in catalogResult.Data.ResourceList.Take(3))
         {
             var title = resource.Title ?? resource.Id ?? "Untitled";
             AnsiConsole.MarkupLine($"[dim]  - {title.EscapeMarkup()} (Status: {resource.Status})[/]");
         }
-    }    else
+    }
+    else
     {
         var errorMsg = catalogResult.Error ?? "Unknown error";
         AnsiConsole.MarkupLine($"[red]✗[/] Error: {errorMsg.EscapeMarkup()}");
