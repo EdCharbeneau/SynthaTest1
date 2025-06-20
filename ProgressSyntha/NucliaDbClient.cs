@@ -1,3 +1,5 @@
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
 using ProgressSyntha.Services;
 using System.Net.Http.Headers;
 using System.Text.Json;
@@ -13,6 +15,7 @@ public class NucliaDbClient : IDisposable
     private readonly HttpClient _httpClient;
     private readonly JsonSerializerOptions _jsonOptions;
     private readonly bool _disposeHttpClient;
+    private readonly ILoggerFactory _loggerFactory;
 
     /// <summary>
     /// Configuration for the NucliaDB client
@@ -38,7 +41,9 @@ public class NucliaDbClient : IDisposable
     /// Creates a new NucliaDB client with the provided configuration
     /// </summary>
     /// <param name="config">Client configuration</param>
-    public NucliaDbClient(SynthaConfig config) : this(new HttpClient(), config, true)
+    /// <param name="loggerFactory">Optional logger factory for logging</param>
+    public NucliaDbClient(SynthaConfig config, ILoggerFactory loggerFactory = null) 
+        : this(new HttpClient(), config, true, loggerFactory)
     {
     }
 
@@ -47,15 +52,18 @@ public class NucliaDbClient : IDisposable
     /// </summary>
     /// <param name="httpClient">HTTP client to use</param>
     /// <param name="config">Client configuration</param>
-    public NucliaDbClient(HttpClient httpClient, SynthaConfig config) : this(httpClient, config, false)
+    /// <param name="loggerFactory">Optional logger factory for logging</param>
+    public NucliaDbClient(HttpClient httpClient, SynthaConfig config, ILoggerFactory loggerFactory = null) 
+        : this(httpClient, config, false, loggerFactory)
     {
     }
 
-    private NucliaDbClient(HttpClient httpClient, SynthaConfig config, bool disposeHttpClient)
+    private NucliaDbClient(HttpClient httpClient, SynthaConfig config, bool disposeHttpClient, ILoggerFactory loggerFactory = null)
     {
         _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
         Config = config ?? throw new ArgumentNullException(nameof(config));
         _disposeHttpClient = disposeHttpClient;
+        _loggerFactory = loggerFactory ?? NullLoggerFactory.Instance;
 
         // Configure HTTP client
         _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -71,9 +79,15 @@ public class NucliaDbClient : IDisposable
         // Initialize services
         var baseUrl = $"https://{config.ZoneId}.syntha.progress.com/api/v1";
         KnowledgeBoxes = new KnowledgeBoxService(_httpClient, baseUrl, _jsonOptions);
-        Search = new SearchService(_httpClient, baseUrl, _jsonOptions, config.KnowledgeBaseId);
+        Search = new SearchService(
+            _httpClient, 
+            baseUrl, 
+            _jsonOptions, 
+            config.KnowledgeBaseId);
         Resources = new ResourceService(_httpClient, baseUrl, _jsonOptions, config.KnowledgeBaseId);
-    }    /// <summary>
+    }    
+    
+    /// <summary>
     /// Disposes the HTTP client if it was created by this instance
     /// </summary>
     public void Dispose()

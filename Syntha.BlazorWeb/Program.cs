@@ -1,7 +1,23 @@
+using Microsoft.Extensions.Logging;
 using ProgressSyntha;
 using Syntha.BlazorWeb.Components;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Configure logging
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
+
+// Set minimum log level based on environment
+if (builder.Environment.IsDevelopment())
+{
+    builder.Logging.SetMinimumLevel(LogLevel.Debug);
+}
+else
+{
+    builder.Logging.SetMinimumLevel(LogLevel.Information);
+}
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
@@ -13,7 +29,12 @@ var config = new SynthaConfig(ZoneId: "progress-proc-us-east-2-1",
 
 builder.Services.AddSingleton(config);
 
-builder.Services.AddSingleton(new NucliaDbClient(config));
+// Register NucliaDbClient with logger factory
+builder.Services.AddSingleton(serviceProvider => {
+    var loggerFactory = serviceProvider.GetRequiredService<ILoggerFactory>();
+    return new NucliaDbClient(config, loggerFactory);
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -23,9 +44,12 @@ if (!app.Environment.IsDevelopment())
 	// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
 	app.UseHsts();
 }
+else
+{
+    app.UseDeveloperExceptionPage();
+}
 
 app.UseHttpsRedirection();
-
 
 app.UseAntiforgery();
 

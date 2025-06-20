@@ -14,6 +14,7 @@ namespace ProgressSyntha.Models;
 [JsonDerivedType(typeof(StatusContent), typeDiscriminator: "status")]
 [JsonDerivedType(typeof(MetaDataContent), typeDiscriminator: "metadata")]
 [JsonDerivedType(typeof(DebugContent), typeDiscriminator: "debug")]
+[JsonDerivedType(typeof(AugmentedContext), typeDiscriminator: "augmented_context")]
 
 public class RAGContent {
 	/// <summary>Gets or sets the raw representation of the content from an underlying implementation.</summary>
@@ -54,6 +55,10 @@ public class MetaDataContent : RAGContent
 {
 	public Tokens? Tokens { get; set; }
 	public Timings? Timings { get; set; }
+}
+
+public class AugmentedContext : RAGContent
+{
 }
 
 public class Tokens

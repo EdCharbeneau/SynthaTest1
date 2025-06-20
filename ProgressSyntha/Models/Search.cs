@@ -22,14 +22,7 @@ public class RagStrategy
 /// </summary>
 public class StreamResponse
 {
-    [JsonPropertyName("type")]
-    public string? Type { get; set; }
-
-    [JsonPropertyName("data")]
-    public string? Data { get; set; }
-
-    [JsonPropertyName("object")]
-    public string? Object { get; set; }
+	public RAGContent Item { get; set; }
 }
 
 /// <summary>

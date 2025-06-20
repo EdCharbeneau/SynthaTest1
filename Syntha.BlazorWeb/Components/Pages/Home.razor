@@ -1,9 +1,11 @@
 ﻿@page "/"
 @using ProgressSyntha;
-@using ProgressSyntha.Models
+@using ProgressSyntha.Models;
+@using Microsoft.Extensions.Logging;
 
 @inject SynthaConfig config
 @inject NucliaDbClient client
+@inject ILogger<Home> Logger
 
 <PageTitle>Home</PageTitle>
 
@@ -17,29 +19,74 @@
 
     protected override async Task OnInitializedAsync()
     {
-        await ConnectToKnowledgeBox();
-        await SimpleAsk();
+        Logger.LogInformation("Component initialization started");
+        try
+        {
+            await ConnectToKnowledgeBox();
+            await SimpleAsk();
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error during component initialization");
+            streamingResponse = "An error occurred while loading the page. Please try again.";
+        }
     }
 
     private async Task SimpleAsk()
     {
-        var response = client.Search.AskStreamAsync(
-            new AskRequest
+        string query = "What is Syntha?";
+
+        Logger.LogInformation("Starting streaming request with query: {Query}", query);
+        var result = client.Search.AskStreamAsync(new AskRequest
             {
-                Query = "What is Syntha?"
+                Query = query,
             });
 
-        await foreach (var item in response)
+        await foreach (var response in result)
         {
-            streamingResponse += item.Data;
+            if (response.Item is AnswerContent answer)
+            {
+                streamingResponse += answer.Text;
+            }
+            if (response.Item is CitationsContent citation)
+            {
+                foreach (var citationItem in citation.Citations)
+                {
+                    foreach (var item in citationItem.Value)
+                    {
+                        Logger.LogInformation($"Citation: {item}");
+                    }
+                }
+            }
         }
+
+        Logger.LogInformation("Completed streaming request: {Answer}", streamingResponse);
+
     }
 
     private async Task ConnectToKnowledgeBox()
     {
-        var response = await client.KnowledgeBoxes.GetKnowledgeBoxAsync(config.KnowledgeBaseId);
-            
-        connectionMessage = $"{response?.Data?.Title} ({response?.Data?.Uuid})";
+        Logger.LogInformation("Connecting to knowledge box: {KnowledgeBoxId}", config.KnowledgeBaseId);
 
+        try
+        {
+            var response = await client.KnowledgeBoxes.GetKnowledgeBoxAsync(config.KnowledgeBaseId);
+
+            if (response?.Data != null)
+            {
+                connectionMessage = $"{response.Data.Title} ({response.Data.Uuid})";
+                Logger.LogInformation("Successfully connected to knowledge box: {Title}", response.Data.Title);
+            }
+            else
+            {
+                connectionMessage = "Connection Failed";
+                Logger.LogWarning("Failed to retrieve knowledge box details");
+            }
+        }
+        catch (Exception ex)
+        {
+            connectionMessage = "Connection Error";
+            Logger.LogError(ex, "Error connecting to knowledge box");
+        }
     }
 }
