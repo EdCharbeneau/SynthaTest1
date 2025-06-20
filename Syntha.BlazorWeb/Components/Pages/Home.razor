@@ -12,11 +12,21 @@
 
 <h1>@connectionMessage</h1>
 
+<p>What is Syntha?</p>
+<button @onclick="SimpleAsk">
+    Get Answer
+</button>
+
 <p>@streamingResponse</p>
+@if (isStreaming)
+{
+    <span>... loading.</span>
+}
 
 @code {
     string connectionMessage = "Not Connected";
     string streamingResponse = "...";
+    bool isStreaming = false;
 
     protected override async Task OnInitializedAsync()
     {
@@ -24,7 +34,6 @@
         try
         {
             await ConnectToKnowledgeBox();
-            await SimpleAsk();
         }
         catch (Exception ex)
         {
@@ -36,6 +45,8 @@
     private async Task SimpleAsk()
     {
         string query = "What is Syntha?";
+        streamingResponse = "";
+        isStreaming = true;
 
         Logger.LogInformation("Starting streaming request with query: {Query}", query);
         var result = client.Search.AskStreamAsync(new AskRequest
@@ -48,18 +59,11 @@
             if (response.Item is AnswerContent answer)
             {
                 streamingResponse += answer.Text;
-            }
-            if (response.Item is CitationsContent citation)
-            {
-                foreach (var citationItem in citation.Citations)
-                {
-                    foreach (var item in citationItem.Value)
-                    {
-                        Logger.LogInformation($"Citation: {item}");
-                    }
-                }
+                StateHasChanged();
+                await Task.Delay(1); // the 1 ms delay smooths the UI updates
             }
         }
+        isStreaming = false;
 
         Logger.LogInformation("Completed streaming request: {Answer}", streamingResponse);
 
