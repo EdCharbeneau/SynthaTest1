@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace ProgressSyntha.Models;
+namespace ProgressSyntha.Models.Streaming;
 
 public class DebugContent : RAGContent
 {

@@ -1,5 +1,5 @@
 ﻿using ProgressSyntha;
-using ProgressSyntha.Models;
+using ProgressSyntha.Models.Streaming;
 using Spectre.Console;
 using Spectre.Console.Json;
 using System.Text.Json;

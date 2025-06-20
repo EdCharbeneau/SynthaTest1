@@ -18,14 +18,6 @@ public class RagStrategy
 }
 
 /// <summary>
-/// Stream response item for real-time ask responses
-/// </summary>
-public class StreamResponse
-{
-	public RAGContent Item { get; set; }
-}
-
-/// <summary>
 /// Retrieval information from search results
 /// </summary>
 public class Retrieval

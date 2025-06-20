@@ -1,9 +1,8 @@
-namespace ProgressSyntha.Models;
-using System.Text.Json.Serialization;
+﻿namespace ProgressSyntha.Models.Streaming;
 
-public class Item
+public class RetrievalContent : RAGContent
 {
-	public RAGContent RAGContent { get; set; }
+	public Results Results { get; set; }
 }
 
 public class Results
@@ -48,21 +47,7 @@ public class ComputedMetadata
 	public List<FieldClassification> FieldClassifications { get; set; } = new();
 }
 
-public class FieldClassification
-{
-	public Field? Field { get; set; } 
-	public List<Classification> Classifications { get; set; } = new();
-}
-
-public record Field(string? FieldType, string? FieldName);
-
-public record Classification(string? LabelSet, string? Label);
-
 public class Data
 {
 	public Dictionary<string, TextValueWrapper> Texts { get; set; } = new();
 }
-
-public record TextValueWrapper([property: JsonPropertyName("value")] TextValue? Item);
-
-public record TextValue(string? Body, string? Format, string? Md5, string? ExtractStrategy);
