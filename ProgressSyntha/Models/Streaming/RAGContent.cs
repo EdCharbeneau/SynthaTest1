@@ -15,6 +15,7 @@ namespace ProgressSyntha.Models.Streaming;
 [JsonDerivedType(typeof(StatusContent), typeDiscriminator: "status")]
 [JsonDerivedType(typeof(MetaDataContent), typeDiscriminator: "metadata")]
 [JsonDerivedType(typeof(DebugContent), typeDiscriminator: "debug")]
+// TODO: JSON samples of AugmentedContent have not been verified yet.
 [JsonDerivedType(typeof(AugmentedContext), typeDiscriminator: "augmented_context")]
 
 public class RAGContent {

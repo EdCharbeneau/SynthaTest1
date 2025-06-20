@@ -48,7 +48,7 @@ await AnsiConsole.Live(root)
 						var key = res.AddNode($"Thumbnail: {resource.Value.Thumbnail}".EscapeMarkup());
 						foreach (var t in resource.Value.Data.Texts)
 						{
-							var body = t.Value?.Item?.Body;
+							var body = t.Value?.Value?.Body;
 							if (!string.IsNullOrWhiteSpace(body))
 							{
 								try
@@ -65,6 +65,45 @@ await AnsiConsole.Live(root)
 							}
 						}
 					}
+					break;
+
+				case DebugContent debug:
+					var dbgNode = root.AddNode("Debug Information");
+
+					// Add metrics information if available
+					if (debug.Metrics != null)
+					{
+						var metricsNode = dbgNode.AddNode("Performance Metrics");
+
+						if (debug.Metrics.Ask != null)
+						{
+							var askNode = metricsNode.AddNode("Ask Operations");
+							askNode.AddNode($"Retrieval: {debug.Metrics.Ask.Retrieval:F3}s");
+							askNode.AddNode($"Context Building: {debug.Metrics.Ask.ContextBuilding:F3}s");
+							askNode.AddNode($"Stream Start: {debug.Metrics.Ask.StreamStart:F3}s");
+							askNode.AddNode($"Answer Prediction: {debug.Metrics.Ask.StreamPredictAnswer:F3}s");
+						}
+
+						if (debug.Metrics.MainQuery != null)
+						{
+							var queryNode = metricsNode.AddNode("Query Operations");
+							queryNode.AddNode($"Query Parse: {debug.Metrics.MainQuery.QueryParse:F3}s");
+							queryNode.AddNode($"Index Search: {debug.Metrics.MainQuery.IndexSearch:F3}s");
+							queryNode.AddNode($"Results Merge: {debug.Metrics.MainQuery.ResultsMerge:F3}s");
+						}
+					}
+
+					// Add some basic request details if available
+					if (debug.Metadata?.PredictRequest != null)
+					{
+						var requestNode = dbgNode.AddNode("Request Details");
+						requestNode.AddNode($"Question: {debug.Metadata.PredictRequest.Question}".EscapeMarkup());
+						requestNode.AddNode($"Top K: {debug.Metadata.PredictRequest.TopK}");
+						requestNode.AddNode($"Retrieval Enabled: {debug.Metadata.PredictRequest.Retrieval}");
+						requestNode.AddNode($"Citations Enabled: {debug.Metadata.PredictRequest.Citations}");
+					}
+
+					ctx.Refresh();
 					break;
 
 				default:
