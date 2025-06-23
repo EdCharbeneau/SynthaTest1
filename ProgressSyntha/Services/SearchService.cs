@@ -95,6 +95,70 @@ internal class SearchService : ISearchService
 			yield return response;
 		}
 	}
+
+	/// <inheritdoc />
+	public async Task<ApiResponse<KnowledgeboxFindResults>> FindAsync(string query, int pageNumber = 0, int pageSize = 20, CancellationToken cancellationToken = default)
+	{
+		try
+		{
+			var queryParams = HttpUtility.ParseQueryString(string.Empty);
+			queryParams["query"] = query;
+			queryParams["page_number"] = pageNumber.ToString();
+			queryParams["top_k"] = pageSize.ToString();
+
+			var url = $"{_baseUrl}/kb/{_knowledgeBaseId}/find";
+			if (queryParams.Count > 0)
+				url += "?" + queryParams.ToString();
+
+			var response = await _httpClient.GetAsync(url, cancellationToken);
+
+			if (response.StatusCode == HttpStatusCode.UnprocessableEntity)
+			{
+				var validationError = await response.Content.ReadFromJsonAsync<HttpValidationError>(_jsonOptions, cancellationToken);
+				return ApiResponse<KnowledgeboxFindResults>.CreateValidationError(validationError!);
+			}
+
+			response.EnsureSuccessStatusCode();
+			var results = await response.Content.ReadFromJsonAsync<KnowledgeboxFindResults>(_jsonOptions, cancellationToken);
+			return ApiResponse<KnowledgeboxFindResults>.CreateSuccess(results!);
+		}
+		catch (HttpRequestException ex)
+		{
+			return ApiResponse<KnowledgeboxFindResults>.CreateError($"HTTP request failed: {ex.Message}");
+		}
+		catch (Exception ex)
+		{
+			return ApiResponse<KnowledgeboxFindResults>.CreateError($"Unexpected error: {ex.Message}");
+		}
+	}
+
+	/// <inheritdoc />
+	public async Task<ApiResponse<KnowledgeboxFindResults>> FindAsync(FindRequest request, CancellationToken cancellationToken = default)
+	{
+		try
+		{
+			var response = await _httpClient.PostAsJsonAsync($"{_baseUrl}/kb/{_knowledgeBaseId}/find", request, _jsonOptions, cancellationToken);
+
+			if (response.StatusCode == HttpStatusCode.UnprocessableEntity)
+			{
+				var validationError = await response.Content.ReadFromJsonAsync<HttpValidationError>(_jsonOptions, cancellationToken);
+				return ApiResponse<KnowledgeboxFindResults>.CreateValidationError(validationError!);
+			}
+
+			response.EnsureSuccessStatusCode();
+			var results = await response.Content.ReadFromJsonAsync<KnowledgeboxFindResults>(_jsonOptions, cancellationToken);
+			return ApiResponse<KnowledgeboxFindResults>.CreateSuccess(results!);
+		}
+		catch (HttpRequestException ex)
+		{
+			return ApiResponse<KnowledgeboxFindResults>.CreateError($"HTTP request failed: {ex.Message}");
+		}
+		catch (Exception ex)
+		{
+			return ApiResponse<KnowledgeboxFindResults>.CreateError($"Unexpected error: {ex.Message}");
+		}
+	}
+
 	/// <inheritdoc />
 	public async Task<ApiResponse<KnowledgeboxSearchResults>> CatalogAsync(string query = "", int pageNumber = 0, int pageSize = 20, CancellationToken cancellationToken = default)
 	{

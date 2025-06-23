@@ -7,6 +7,7 @@
 @inject SynthaConfig config
 @inject NucliaDbClient client
 @inject ILogger<Home> Logger
+@inject BlobInterop blob
 
 <PageTitle>Home</PageTitle>
 
@@ -17,7 +18,37 @@
     Get Answer
 </button>
 
+<button @onclick="SimpleFind">
+    Find
+</button>
+
 <p>@streamingResponse</p>
+@if (content?.Results?.Resources.Values is not null)
+{
+    foreach (var item in content?.Results?.Resources.Values)
+    {
+
+        <div>
+            <h2>Content Details</h2>
+            <p><strong>Title:</strong> @item.Title</p>
+            @if (item.Data.Files is not null)
+            {
+                @foreach (var f in item.Data.Files)
+                {
+                    if (f.Value.Value.File.ContentType == "audio/mpeg")
+                    {
+                        <span>@f.Value.Value.File.Uri</span>
+                        <audio @key="@f.Key" id="@f.Key" controls="true"></audio>
+                        <button @onclick="() => SetFile(f.Value.Value.File.Uri, f.Key)">
+                            Download Audio
+                        </button>
+                    }
+                }
+            }
+        </div>
+    }
+
+}
 @if (isStreaming)
 {
     <span>... loading.</span>
@@ -27,6 +58,7 @@
     string connectionMessage = "Not Connected";
     string streamingResponse = "...";
     bool isStreaming = false;
+    RetrievalContent? content;
 
     protected override async Task OnInitializedAsync()
     {
@@ -50,9 +82,9 @@
 
         Logger.LogInformation("Starting streaming request with query: {Query}", query);
         var result = client.Search.AskStreamAsync(new AskRequest
-            {
-                Query = query,
-            });
+        {
+            Query = query,
+        });
 
         await foreach (var response in result)
         {
@@ -61,6 +93,10 @@
                 streamingResponse += answer.Text;
                 StateHasChanged();
                 await Task.Delay(1); // the 1 ms delay smooths the UI updates
+            }
+            if (response.Item is RetrievalContent r)
+            {
+                content = r;
             }
         }
         isStreaming = false;
@@ -92,6 +128,58 @@
         {
             connectionMessage = "Connection Error";
             Logger.LogError(ex, "Error connecting to knowledge box");
+        }
+    }
+
+    private async Task SimpleFind()
+    {
+        var response = await client.Search.FindAsync("What is Syntha?");
+
+        if (response.Success && response.Data != null)
+        {
+            streamingResponse = "Success";
+        }
+        else
+        {
+            streamingResponse = "No results found or an error occurred.";
+            Logger.LogWarning("Find operation failed: {Error}", response.Error);
+        }
+    }
+
+    private async Task SetFile(string path, string elementId)
+    {
+        try
+        {
+            var fileContent = await GetFileContentAsync(path);
+            await blob.SetSource(elementId, fileContent, "audio/mpeg", "Title");
+            StateHasChanged();
+            // Additional logic for handling fileContent and elementId
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error setting file for element: {ElementId}", elementId);
+        }
+    }
+
+    private async Task<byte[]> GetFileContentAsync(string path)
+    {
+        try
+        {
+            var fileResponse = await client.Resources.DownloadFieldFileAsync(path, true);
+            if (fileResponse.Success && fileResponse.Data != null)
+            {
+                return fileResponse.Data;
+            }
+            else
+            {
+                Logger.LogWarning("Failed to retrieve file content: {Error}", fileResponse.Error);
+                return [];
+            }
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error retrieving file content");
+            return []; 
         }
     }
 }

@@ -122,7 +122,7 @@ public class KnowledgeboxResource
 /// <summary>
 /// Sort field options for catalog queries
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonStringEnumConverter<SortField>))]
 public enum SortField
 {
     [JsonPropertyName("created")]
@@ -136,7 +136,7 @@ public enum SortField
 /// <summary>
 /// Sort order options
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonStringEnumConverter<SortOrder>))]
 public enum SortOrder
 {
     [JsonPropertyName("asc")]
@@ -148,7 +148,7 @@ public enum SortOrder
 /// <summary>
 /// Resource processing status
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonStringEnumConverter<ResourceProcessingStatus>))]
 public enum ResourceProcessingStatus
 {
     [JsonPropertyName("processed")]
@@ -162,7 +162,7 @@ public enum ResourceProcessingStatus
 /// <summary>
 /// Resource properties to include in responses
 /// </summary>
-[JsonConverter(typeof(JsonStringEnumConverter))]
+[JsonConverter(typeof(JsonStringEnumConverter<ResourceProperties>))]
 public enum ResourceProperties
 {
     [JsonPropertyName("basic")]
