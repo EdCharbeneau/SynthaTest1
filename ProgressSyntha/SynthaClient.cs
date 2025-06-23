@@ -1,82 +1,100 @@
-﻿using System.Diagnostics;
-using System.Net;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
+using ProgressSyntha.Services;
 using System.Net.Http.Headers;
-using System.Net.Http.Json;
-using System.Runtime.CompilerServices;
 using System.Text.Json;
-using ProgressSyntha.Models;
+using System.Text.Json.Serialization;
 
 namespace ProgressSyntha;
 
 /// <summary>
-/// Legacy SynthaClient - use NucliaDbClient for new applications
+/// Main NucliaDB SDK client for interacting with the NucliaDB REST API
 /// </summary>
-[Obsolete("Use NucliaDbClient instead. This class is maintained for backward compatibility.")]
-public class SynthaClient
+public class SynthaClient : IDisposable
 {
-	private readonly HttpClient http;
-	private readonly SynthaConfig config;
-	public SynthaClient(HttpClient http, SynthaConfig config)
-	{
-		this.http = http ?? throw new ArgumentNullException(nameof(http));
-		this.config = config;
-		http.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-		http.DefaultRequestHeaders.Add("X-NUCLIA-SERVICEACCOUNT", $"Bearer {config.ApiKey}");
+    private readonly HttpClient _httpClient;
+    private readonly JsonSerializerOptions _jsonOptions;
+    private readonly bool _disposeHttpClient;
+    private readonly ILoggerFactory _loggerFactory;
 
-	}
+    /// <summary>
+    /// Configuration for the NucliaDB client
+    /// </summary>
+    public SynthaConfig Config { get; }
 
-	public SynthaClient(SynthaConfig config) : this(new HttpClient(), config)
-	{
-	}
+    /// <summary>
+    /// Knowledge Box operations
+    /// </summary>
+    public IKnowledgeBoxService KnowledgeBoxes { get; }
 
-	private readonly JsonSerializerOptions jsonOptions = new(JsonSerializerDefaults.Web);
-	private string Endpoint => $"https://{config.ZoneId}.syntha.progress.com/api/v1/kb/{config.KnowledgeBaseId}/ask";
+    /// <summary>
+    /// Search operations
+    /// </summary>
+    public ISearchService Search { get; }
 
-	private AskRequest defaultOptions = new AskRequest
-	{
-		Query = string.Empty,
-		Show = new[] { "basic", "values", "origin" },
-		Features = new[] { "keyword", "semantic" },
-		Highlight = false,
-		Citations = true,
-		Rephrase = true,
-		Debug = true,
-		ShowHidden = false,
-		Reranker = "predict",
-		Autofilter = false,
-		RagStrategies = new[]
-		{
-			new RagStrategy
-			{
-				Name = "neighbouring_paragraphs",
-				Before = 2,
-				After = 2
-			}
-		},
-		Context = Array.Empty<object>(),
-		Filters = Array.Empty<object>()
-	};
+    /// <summary>
+    /// Resource operations
+    /// </summary>
+    public IResourceService Resources { get; }
 
-	public async IAsyncEnumerable<StreamResponse> Ask(string query = "What is syntha", [EnumeratorCancellation] CancellationToken cancellationToken = default)
-	{
-		var requestOptions = defaultOptions with { Query = query };
+    /// <summary>
+    /// Creates a new NucliaDB client with the provided configuration
+    /// </summary>
+    /// <param name="config">Client configuration</param>
+    /// <param name="loggerFactory">Optional logger factory for logging</param>
+    public SynthaClient(SynthaConfig config, ILoggerFactory loggerFactory = null) 
+        : this(new HttpClient(), config, true, loggerFactory)
+    {
+    }
 
-		using var response = await http.PostAsJsonAsync(Endpoint, requestOptions, jsonOptions, cancellationToken);
-		response.EnsureSuccessStatusCode();
+    /// <summary>
+    /// Creates a new NucliaDB client with the provided HttpClient and configuration
+    /// </summary>
+    /// <param name="httpClient">HTTP client to use</param>
+    /// <param name="config">Client configuration</param>
+    /// <param name="loggerFactory">Optional logger factory for logging</param>
+    public SynthaClient(HttpClient httpClient, SynthaConfig config, ILoggerFactory loggerFactory = null) 
+        : this(httpClient, config, false, loggerFactory)
+    {
+    }
 
-		await using var stream = await response.Content.ReadAsStreamAsync(cancellationToken);
-		using var reader = new StreamReader(stream);
+    private SynthaClient(HttpClient httpClient, SynthaConfig config, bool disposeHttpClient, ILoggerFactory loggerFactory = null)
+    {
+        _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
+        Config = config ?? throw new ArgumentNullException(nameof(config));
+        _disposeHttpClient = disposeHttpClient;
+        _loggerFactory = loggerFactory ?? NullLoggerFactory.Instance;
 
-		while (!reader.EndOfStream && !cancellationToken.IsCancellationRequested)
-		{
-			var line = await reader.ReadLineAsync();
-			if (string.IsNullOrEmpty(line)) continue;
+        // Configure HTTP client
+        _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+        _httpClient.DefaultRequestHeaders.Add("X-NUCLIA-SERVICEACCOUNT", $"Bearer {config.ApiKey}");        // Configure JSON serialization
+        _jsonOptions = new JsonSerializerOptions(JsonSerializerDefaults.Web)
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            WriteIndented = false,
+            PropertyNameCaseInsensitive = true,
+            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+        };
 
-			var streamResponse = JsonSerializer.Deserialize<StreamResponse>(line, jsonOptions);
-			if (streamResponse != null)
-			{
-				yield return streamResponse;
-			}
-		}
-	}
+        // Initialize services
+        var baseUrl = $"https://{config.ZoneId}.syntha.progress.com/api/v1";
+        KnowledgeBoxes = new KnowledgeBoxService(_httpClient, baseUrl, _jsonOptions);
+        Search = new SearchService(
+            _httpClient, 
+            baseUrl, 
+            _jsonOptions, 
+            config.KnowledgeBaseId);
+        Resources = new ResourceService(_httpClient, baseUrl, _jsonOptions, config.KnowledgeBaseId);
+    }    
+    
+    /// <summary>
+    /// Disposes the HTTP client if it was created by this instance
+    /// </summary>
+    public void Dispose()
+    {
+        if (_disposeHttpClient)
+        {
+            _httpClient?.Dispose();
+        }
+    }
 }

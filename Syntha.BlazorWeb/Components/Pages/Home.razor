@@ -5,7 +5,7 @@
 @using ProgressSyntha.Models.Streaming
 
 @inject SynthaConfig config
-@inject NucliaDbClient client
+@inject SynthaClient client
 @inject ILogger<Home> Logger
 @inject BlobInterop blob
 
@@ -37,7 +37,6 @@
                 {
                     if (f.Value.Value.File.ContentType == "audio/mpeg")
                     {
-                        <span>@f.Value.Value.File.Uri</span>
                         <audio @key="@f.Key" id="@f.Key" controls="true"></audio>
                         <button @onclick="() => SetFile(f.Value.Value.File.Uri, f.Key)">
                             Download Audio

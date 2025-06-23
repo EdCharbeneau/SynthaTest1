@@ -34,7 +34,7 @@ builder.Services.AddScoped<BlobInterop>();
 // Register NucliaDbClient with logger factory
 builder.Services.AddSingleton(serviceProvider => {
     var loggerFactory = serviceProvider.GetRequiredService<ILoggerFactory>();
-    return new NucliaDbClient(config, loggerFactory);
+    return new SynthaClient(config, loggerFactory);
 });
 
 var app = builder.Build();
