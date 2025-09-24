@@ -50,7 +50,7 @@ public record AskRequest
     public bool Rephrase { get; set; } = true;
 
     [JsonPropertyName("debug")]
-    public bool Debug { get; set; } = true;
+    public bool Debug { get; set; } = false;
 
     [JsonPropertyName("show_hidden")]
     public bool ShowHidden { get; set; } = false;
@@ -64,6 +64,15 @@ public record AskRequest
     [JsonPropertyName("rag_strategies")]
     public RagStrategy[] RagStrategies { get; set; } = Array.Empty<RagStrategy>();
 
-    [JsonPropertyName("context")]
-    public object[] Context { get; set; } = Array.Empty<object>();
+    [JsonPropertyName("chat_history")]
+    public ChatHistoryItem[] ChatHistory { get; set; } = Array.Empty<ChatHistoryItem>();
+}
+
+public record ChatHistoryItem
+{
+	[JsonPropertyName("author")]
+	public string Author { get; set; }
+
+	[JsonPropertyName("text")]
+	public string Text { get; set; }
 }
