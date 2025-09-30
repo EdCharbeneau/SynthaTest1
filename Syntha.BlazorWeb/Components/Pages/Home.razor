@@ -1,0 +1,184 @@
+﻿@page "/"
+@using Microsoft.Extensions.Logging;
+@using ProgressSyntha;
+@using ProgressSyntha.Models;
+@using ProgressSyntha.Models.Streaming
+
+@inject SynthaConfig config
+@inject SynthaClient client
+@inject ILogger<Home> Logger
+@inject BlobInterop blob
+
+<PageTitle>Home</PageTitle>
+
+<h1>@connectionMessage</h1>
+
+<p>What is Syntha?</p>
+<button @onclick="SimpleAsk">
+    Get Answer
+</button>
+
+<button @onclick="SimpleFind">
+    Find
+</button>
+
+<p>@streamingResponse</p>
+@if (content?.Results?.Resources.Values is not null)
+{
+    foreach (var item in content?.Results?.Resources.Values)
+    {
+
+        <div>
+            <h2>Content Details</h2>
+            <p><strong>Title:</strong> @item.Title</p>
+            @if (item.Data.Files is not null)
+            {
+                @foreach (var f in item.Data.Files)
+                {
+                    if (f.Value.Value.File.ContentType == "audio/mpeg")
+                    {
+                        <audio @key="@f.Key" id="@f.Key" controls="true"></audio>
+                        <button @onclick="() => SetFile(f.Value.Value.File.Uri, f.Key)">
+                            Download Audio
+                        </button>
+                    }
+                }
+            }
+        </div>
+    }
+
+}
+@if (isStreaming)
+{
+    <span>... loading.</span>
+}
+
+@code {
+    string connectionMessage = "Not Connected";
+    string streamingResponse = "...";
+    bool isStreaming = false;
+    RetrievalContent? content;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Logger.LogInformation("Component initialization started");
+        try
+        {
+            await ConnectToKnowledgeBox();
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error during component initialization");
+            streamingResponse = "An error occurred while loading the page. Please try again.";
+        }
+    }
+
+    private async Task SimpleAsk()
+    {
+        string query = "What is Syntha?";
+        streamingResponse = "";
+        isStreaming = true;
+
+        Logger.LogInformation("Starting streaming request with query: {Query}", query);
+        var result = client.Search.AskStreamAsync(new AskRequest
+        {
+            Query = query,
+        });
+
+        await foreach (var response in result)
+        {
+            if (response.Item is AnswerContent answer)
+            {
+                streamingResponse += answer.Text;
+                StateHasChanged();
+                await Task.Delay(1); // the 1 ms delay smooths the UI updates
+            }
+            if (response.Item is RetrievalContent r)
+            {
+                content = r;
+            }
+        }
+        isStreaming = false;
+
+        Logger.LogInformation("Completed streaming request: {Answer}", streamingResponse);
+
+    }
+
+    private async Task ConnectToKnowledgeBox()
+    {
+        Logger.LogInformation("Connecting to knowledge box: {KnowledgeBoxId}", config.KnowledgeBaseId);
+
+        try
+        {
+            var response = await client.KnowledgeBoxes.GetKnowledgeBoxAsync(config.KnowledgeBaseId);
+
+            if (response?.Data != null)
+            {
+                connectionMessage = $"{response.Data.Title} ({response.Data.Uuid})";
+                Logger.LogInformation("Successfully connected to knowledge box: {Title}", response.Data.Title);
+            }
+            else
+            {
+                connectionMessage = "Connection Failed";
+                Logger.LogWarning("Failed to retrieve knowledge box details");
+            }
+        }
+        catch (Exception ex)
+        {
+            connectionMessage = "Connection Error";
+            Logger.LogError(ex, "Error connecting to knowledge box");
+        }
+    }
+
+    private async Task SimpleFind()
+    {
+        var response = await client.Search.FindAsync("What is Syntha?");
+
+        if (response.Success && response.Data != null)
+        {
+            streamingResponse = "Success";
+        }
+        else
+        {
+            streamingResponse = "No results found or an error occurred.";
+            Logger.LogWarning("Find operation failed: {Error}", response.Error);
+        }
+    }
+
+    private async Task SetFile(string path, string elementId)
+    {
+        try
+        {
+            var fileContent = await GetFileContentAsync(path);
+            await blob.SetSource(elementId, fileContent, "audio/mpeg", "Title");
+            StateHasChanged();
+            // Additional logic for handling fileContent and elementId
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error setting file for element: {ElementId}", elementId);
+        }
+    }
+
+    private async Task<byte[]> GetFileContentAsync(string path)
+    {
+        try
+        {
+            var fileResponse = await client.Resources.DownloadFieldFileAsync(path, true);
+            if (fileResponse.Success && fileResponse.Data != null)
+            {
+                return fileResponse.Data;
+            }
+            else
+            {
+                Logger.LogWarning("Failed to retrieve file content: {Error}", fileResponse.Error);
+                return [];
+            }
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, "Error retrieving file content");
+            return []; 
+        }
+    }
+}

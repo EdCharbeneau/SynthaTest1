@@ -1,0 +1,2181 @@
+{
+  "item": {
+    "type": "retrieval",
+    "results": {
+      "resources": {
+        "6d960f0c0fb7522cb9a7a5d3d6e954ba": {
+          "id": "6d960f0c0fb7522cb9a7a5d3d6e954ba",
+          "slug": "6d960f0c0fb7522cb9a7a5d3d6e954ba",
+          "title": "Progress Syntha - Product Specification Sheet.docx",
+          "summary": "",
+          "icon": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "thumbnail": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/6d960f0c0fb7522cb9a7a5d3d6e954ba/file/6d960f0c0fb7522cb9a7a5d3d6e954ba/download/extracted/file_thumbnail",
+          "metadata": {
+            "metadata": {},
+            "language": "en",
+            "languages": [
+              "en"
+            ],
+            "status": "PROCESSED"
+          },
+          "usermetadata": {
+            "classifications": [
+              {
+                "labelset": "resourcetype",
+                "label": "General Product Info",
+                "cancelled_by_user": true
+              }
+            ],
+            "relations": []
+          },
+          "fieldmetadata": [],
+          "computedmetadata": {
+            "field_classifications": [
+              {
+                "field": {
+                  "field_type": "generic",
+                  "field": "title"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "Technical Documentation"
+                  }
+                ]
+              },
+              {
+                "field": {
+                  "field_type": "file",
+                  "field": "6d960f0c0fb7522cb9a7a5d3d6e954ba"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "General Product Info"
+                  }
+                ]
+              }
+            ]
+          },
+          "created": "2025-04-12T03:37:20.099553",
+          "modified": "2025-04-15T04:16:08.082950",
+          "last_seqid": 0,
+          "queue": "private",
+          "hidden": false,
+          "data": {
+            "texts": {
+              "da-15WordSummary-f-6d960f0c0fb7522cb9a7a5d3d6e954ba": {
+                "value": {
+                  "body": "Progress Syntha offers enterprise-grade RAG platform for secure, scalable, AI-powered knowledge management and retrieval.",
+                  "format": "PLAIN",
+                  "md5": "d2120fda7481dfbebdafde828bfa18b1",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-f-6d960f0c0fb7522cb9a7a5d3d6e954ba": {
+                "value": {
+                  "body": "\"Progress Syntha Product Specification Sheet: Enterprise-Grade RAG Platform for AI-Powered Knowledge Management\"",
+                  "format": "PLAIN",
+                  "md5": "a00b352a55ac24f28cac1917338328a8",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-a-title": {
+                "value": {
+                  "body": "\"Progress Syntha Product Specification Sheet – Detailed Features, Technical Data, and Performance Insights\"",
+                  "format": "PLAIN",
+                  "md5": "7a760210dcda264d42f1834b6c16cd12",
+                  "extract_strategy": ""
+                }
+              },
+              "da-ResourceMerchandiser-f-6d960f0c0fb7522cb9a7a5d3d6e954ba": {
+                "value": {
+                  "body": "{\"title\": \"Progress Syntha Product Specification Sheet\", \"purpose\": \"Provides a comprehensive overview of Progress Syntha's capabilities and technical specifications.\", \"ideal_audience\": [\"Technical Pre-Sales\", \"CIO Buyers\", \"Enterprise IT Teams\", \"Developers\"], \"value_to_audience\": \"This document offers a detailed understanding of Progress Syntha's features, deployment options, and use cases, enabling informed decision-making for enterprise-grade AI solutions.\", \"sales_activation_tip\": \"Use this document to showcase Progress Syntha's unique capabilities and deployment flexibility during technical discussions or product evaluations.\", \"key_message_points\": [\"Progress Syntha is a RAG-as-a-Service platform that transforms unstructured data into an AI-powered knowledge engine.\", \"Supports a wide range of data formats and ingestion methods, including documents, audio, video, and websites.\", \"Offers advanced search capabilities, including semantic, keyword, and hybrid search modes.\", \"Provides flexible deployment options: fully managed cloud, hybrid, or on-premises.\", \"Ensures enterprise-grade security and compliance with ISO 27001 and SOC 2 Type II certifications.\"], \"confidence_level_to_share\": \"High\", \"link\": \"https://example.com/progress-syntha-spec-sheet\", \"visual_asset\": \"https://example.com/progress-syntha-cover-image\"}",
+                  "format": "JSON",
+                  "md5": "79e90e95e1685e3317f75cab74eae8d4",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "files": {
+              "6d960f0c0fb7522cb9a7a5d3d6e954ba": {
+                "value": {
+                  "added": "2025-04-12T03:37:20.099563Z",
+                  "file": {
+                    "uri": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/6d960f0c0fb7522cb9a7a5d3d6e954ba/file/6d960f0c0fb7522cb9a7a5d3d6e954ba/download/field",
+                    "size": 21467,
+                    "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "filename": "Progress%20Syntha%20-%20Product%20Specification%20Sheet.docx",
+                    "md5": "6d960f0c0fb7522cb9a7a5d3d6e954ba"
+                  },
+                  "language": "",
+                  "password": "",
+                  "external": false,
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "generics": {
+              "title": {
+                "value": "Progress Syntha - Product Specification Sheet.docx"
+              }
+            }
+          },
+          "fields": {
+            "/t/da-ResourceMerchandiser-f-6d960f0c0fb7522cb9a7a5d3d6e954ba": {
+              "paragraphs": {
+                "6d960f0c0fb7522cb9a7a5d3d6e954ba/t/da-ResourceMerchandiser-f-6d960f0c0fb7522cb9a7a5d3d6e954ba/678-820": {
+                  "score": 0.9984207153320312,
+                  "score_type": "RERANKER",
+                  "order": 0,
+                  "text": "key_message_points 0 : Progress Syntha is a RAG-as-a-Service platform that transforms unstructured data into an AI-powered knowledge engine.\n\n",
+                  "id": "6d960f0c0fb7522cb9a7a5d3d6e954ba/t/da-ResourceMerchandiser-f-6d960f0c0fb7522cb9a7a5d3d6e954ba/678-820",
+                  "labels": [
+                    "/k/text"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 5,
+                    "start": 678,
+                    "end": 820,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            }
+          }
+        },
+        "a11b419d59224a7a9e5e08e6a3c6866e": {
+          "id": "a11b419d59224a7a9e5e08e6a3c6866e",
+          "slug": "a11b419d59224a7a9e5e08e6a3c6866e",
+          "title": "Create a chatbot | Syntha Documentation Portal",
+          "summary": "",
+          "icon": "application/stf-link",
+          "thumbnail": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/a11b419d59224a7a9e5e08e6a3c6866e/link/link/download/extracted/link_thumbnail",
+          "metadata": {
+            "metadata": {},
+            "language": "en",
+            "languages": [
+              "en"
+            ],
+            "status": "PROCESSED"
+          },
+          "usermetadata": {
+            "classifications": [],
+            "relations": []
+          },
+          "fieldmetadata": [],
+          "computedmetadata": {
+            "field_classifications": [
+              {
+                "field": {
+                  "field_type": "link",
+                  "field": "link"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "Technical Documentation"
+                  }
+                ]
+              }
+            ]
+          },
+          "created": "2025-06-10T07:55:58.393136",
+          "modified": "2025-06-10T07:55:58.393145",
+          "last_seqid": 0,
+          "queue": "private",
+          "hidden": false,
+          "origin": {
+            "source_id": "",
+            "url": "https://docs.syntha.progress.com/docs/rag/how-to/chatbot",
+            "metadata": {},
+            "tags": [],
+            "collaborators": [],
+            "filename": "",
+            "related": [],
+            "path": "",
+            "source": "API"
+          },
+          "data": {
+            "texts": {
+              "da-50to60Title-a-title": {
+                "value": {
+                  "body": "\"Create a Chatbot | Step-by-Step Guide on Syntha Documentation Portal for Building AI-Powered Bots\"",
+                  "format": "PLAIN",
+                  "md5": "bd3467c4ee21f6473ae40438507e9b07",
+                  "extract_strategy": ""
+                }
+              },
+              "da-ResourceMerchandiser-u-link": {
+                "value": {
+                  "body": "{\"title\": \"How to Create a Chatbot with Syntha\", \"purpose\": \"Guides users on creating a chatbot using Syntha's RAG-based search engine.\", \"ideal_audience\": [\"Developers\", \"Technical Pre-Sales\", \"AI Enthusiasts\"], \"value_to_audience\": \"This document provides a clear and practical guide to building a chatbot that maintains conversational context using Syntha's API.\", \"sales_activation_tip\": \"Share this document with developers or technical teams exploring chatbot solutions to demonstrate Syntha's capabilities.\", \"key_message_points\": [\"Syntha is a RAG-based search engine that generates answers from documents.\", \"To create a chatbot, developers must manage conversation context externally.\", \"The 'context' parameter in the '/ask' endpoint allows injecting conversation history.\", \"The 'rephrase' parameter ensures accurate data retrieval by rephrasing questions based on context.\", \"An example API call demonstrates how to implement these features.\"], \"confidence_level_to_share\": \"High\", \"link\": \"https://<zone>.syntha.progress.com/docs/rag/how-to/chatbot\"}",
+                  "format": "JSON",
+                  "md5": "ac644219fad27d8eb6a279027785ace8",
+                  "extract_strategy": ""
+                }
+              },
+              "da-15WordSummary-u-link": {
+                "value": {
+                  "body": "Learn to create a chatbot using Syntha's RAG-based search engine with conversation context management.",
+                  "format": "PLAIN",
+                  "md5": "3eca514249eb4ab334a6b954bd12b4a8",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-u-link": {
+                "value": {
+                  "body": "\"Step-by-Step Guide to Creating a Chatbot with Syntha | Syntha Documentation Portal\"",
+                  "format": "PLAIN",
+                  "md5": "745844a1f024284cb9651f2d98a20fe2",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "links": {
+              "link": {
+                "value": {
+                  "added": "2025-06-10T07:55:58.393254Z",
+                  "headers": {},
+                  "cookies": {},
+                  "uri": "https://docs.syntha.progress.com/docs/rag/how-to/chatbot",
+                  "language": "",
+                  "localstorage": {},
+                  "css_selector": "",
+                  "xpath": "",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "generics": {
+              "title": {
+                "value": "Create a chatbot | Syntha Documentation Portal"
+              }
+            }
+          },
+          "fields": {
+            "/t/da-ResourceMerchandiser-u-link": {
+              "paragraphs": {
+                "a11b419d59224a7a9e5e08e6a3c6866e/t/da-ResourceMerchandiser-u-link/534-633": {
+                  "score": 0.9982859492301941,
+                  "score_type": "RERANKER",
+                  "order": 1,
+                  "text": "key_message_points 0 : Syntha is a RAG-based search engine that generates answers from documents.\n\n",
+                  "id": "a11b419d59224a7a9e5e08e6a3c6866e/t/da-ResourceMerchandiser-u-link/534-633",
+                  "labels": [
+                    "/k/text"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 5,
+                    "start": 534,
+                    "end": 633,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            }
+          }
+        },
+        "d728e56a643354f1553ada7cad107d61": {
+          "id": "d728e56a643354f1553ada7cad107d61",
+          "slug": "d728e56a643354f1553ada7cad107d61",
+          "title": "Syntha_Ad_British.mp3",
+          "summary": "",
+          "icon": "audio/mpeg",
+          "thumbnail": "",
+          "metadata": {
+            "metadata": {},
+            "language": "en",
+            "languages": [
+              "en"
+            ],
+            "status": "PROCESSED"
+          },
+          "usermetadata": {
+            "classifications": [],
+            "relations": []
+          },
+          "fieldmetadata": [],
+          "computedmetadata": {
+            "field_classifications": [
+              {
+                "field": {
+                  "field_type": "file",
+                  "field": "d728e56a643354f1553ada7cad107d61"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "Marketing Assets"
+                  }
+                ]
+              }
+            ]
+          },
+          "created": "2025-06-12T11:53:30.528524",
+          "last_seqid": 0,
+          "queue": "private",
+          "hidden": false,
+          "data": {
+            "texts": {
+              "da-ResourceMerchandiser-f-d728e56a643354f1553ada7cad107d61": {
+                "value": {
+                  "body": "{\"title\": \"Unlocking Institutional Memory with Syntha\", \"purpose\": \"Explains how Syntha transforms enterprise data into actionable insights.\", \"ideal_audience\": [\"Legal Teams\", \"Support Agents\", \"Executives\", \"IT Decision Makers\"], \"value_to_audience\": \"This document demonstrates how Syntha can turn buried data into accessible, actionable insights, enabling faster and smarter decision-making.\", \"sales_activation_tip\": \"Use this to illustrate Syntha’s ability to deliver immediate value during client discussions about data accessibility and AI solutions.\", \"key_message_points\": [\"Syntha transforms buried data into accessible, actionable insights.\", \"It uses AI to synthesize grounded answers and cites sources.\", \"Syntha is plug-and-play, enterprise-grade, and ISO-certified.\", \"It eliminates the need for glue code, data science teams, or long implementation times.\", \"Syntha works across cloud, hybrid, or on-prem environments.\"], \"confidence_level_to_share\": \"High\", \"link\": \"https://www.syntha.com/unlocking-institutional-memory\", \"visual_asset\": \"https://www.syntha.com/assets/syntha-cover-image.png\"}",
+                  "format": "JSON",
+                  "md5": "eadd25cc848a18eb954ac1fb2ffe48f5",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-f-d728e56a643354f1553ada7cad107d61": {
+                "value": {
+                  "body": "\"Unlock Business Potential: Syntha Transforms Data into Actionable Insights with AI-Powered Precision\"",
+                  "format": "PLAIN",
+                  "md5": "65cc461c329fd688c0009044fc011038",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-a-title": {
+                "value": {
+                  "body": "\"Syntha Ad British Accent - High-Quality Audio for Marketing Campaigns | Engaging Voiceover for UK Audiences\"",
+                  "format": "PLAIN",
+                  "md5": "73c90118aa4b16fe4e91b9e9dac778b2",
+                  "extract_strategy": ""
+                }
+              },
+              "da-15WordSummary-f-d728e56a643354f1553ada7cad107d61": {
+                "value": {
+                  "body": "Syntha transforms inaccessible data into actionable insights, empowering businesses with fast, precise, AI-driven solutions.",
+                  "format": "PLAIN",
+                  "md5": "02fa7115e804688280dec699b6f48914",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "files": {
+              "d728e56a643354f1553ada7cad107d61": {
+                "value": {
+                  "added": "2025-06-12T11:53:30.528543Z",
+                  "file": {
+                    "uri": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/d728e56a643354f1553ada7cad107d61/file/d728e56a643354f1553ada7cad107d61/download/field",
+                    "size": 1818167,
+                    "content_type": "audio/mpeg",
+                    "filename": "Syntha_Ad_British.mp3",
+                    "md5": "d728e56a643354f1553ada7cad107d61"
+                  },
+                  "language": "",
+                  "password": "",
+                  "external": false,
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "generics": {
+              "title": {
+                "value": "Syntha_Ad_British.mp3"
+              }
+            }
+          },
+          "fields": {
+            "/f/d728e56a643354f1553ada7cad107d61": {
+              "paragraphs": {
+                "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/996-1202": {
+                  "score": 0.9952999353408813,
+                  "score_type": "RERANKER",
+                  "order": 2,
+                  "text": " No glue code. No data science team. No waiting six months to see value. Syntha is a plug-and-play, enterprise-grade, ISO-certified, and works across cloud, hybrid, or on-prem. It's not just smarter search.",
+                  "id": "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/996-1202",
+                  "labels": [
+                    "/k/transcript"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 3,
+                    "start": 996,
+                    "end": 1202,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                },
+                "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/220-707": {
+                  "score": 0.995075523853302,
+                  "score_type": "RERANKER",
+                  "order": 3,
+                  "text": " Data is only an asset if it's accessible, actionable and used. Right now, most companies are data-rich and insight-poor. pour. Sitting on gold using teaspoons. Syntha changes that. Syntha is a retrieval augmented generation platform that turns all your content: documents, recordings, scanned forms, chat logs, into something your teams can talk to. Ask it a question and it doesn't guess. It retrieves relevant information, uses AI to synthesize a grounded answer and cites the source.",
+                  "id": "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/220-707",
+                  "labels": [
+                    "/k/transcript"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 1,
+                    "start": 220,
+                    "end": 707,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                },
+                "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/1405-1461": {
+                  "score": 0.2755194306373596,
+                  "score_type": "RERANKER",
+                  "order": 16,
+                  "text": " with precision. That's what Syntha delivers. Thank you.",
+                  "id": "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/1405-1461",
+                  "labels": [
+                    "/k/transcript"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 5,
+                    "start": 1405,
+                    "end": 1461,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            },
+            "/t/da-15WordSummary-f-d728e56a643354f1553ada7cad107d61": {
+              "paragraphs": {
+                "d728e56a643354f1553ada7cad107d61/t/da-15WordSummary-f-d728e56a643354f1553ada7cad107d61/0-124": {
+                  "score": 0.9086179733276367,
+                  "score_type": "RERANKER",
+                  "order": 9,
+                  "text": "Syntha transforms inaccessible data into actionable insights, empowering businesses with fast, precise, AI-driven solutions.",
+                  "id": "d728e56a643354f1553ada7cad107d61/t/da-15WordSummary-f-d728e56a643354f1553ada7cad107d61/0-124",
+                  "labels": [
+                    "/k/text"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 0,
+                    "start": 0,
+                    "end": 124,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            },
+            "/t/da-50to60Title-f-d728e56a643354f1553ada7cad107d61": {
+              "paragraphs": {
+                "d728e56a643354f1553ada7cad107d61/t/da-50to60Title-f-d728e56a643354f1553ada7cad107d61/0-102": {
+                  "score": 0.7325918078422546,
+                  "score_type": "RERANKER",
+                  "order": 14,
+                  "text": " Unlock Business Potential: Syntha Transforms Data into Actionable Insights with AI-Powered Precision ",
+                  "id": "d728e56a643354f1553ada7cad107d61/t/da-50to60Title-f-d728e56a643354f1553ada7cad107d61/0-102",
+                  "labels": [
+                    "/k/text"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 0,
+                    "start": 0,
+                    "end": 102,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            }
+          }
+        },
+        "84aa65edefff4c90a610ecc299e5de00": {
+          "id": "84aa65edefff4c90a610ecc299e5de00",
+          "slug": "84aa65edefff4c90a610ecc299e5de00",
+          "title": "Syntha documentation | Syntha Documentation Portal",
+          "summary": "",
+          "icon": "application/stf-link",
+          "thumbnail": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/84aa65edefff4c90a610ecc299e5de00/link/link/download/extracted/link_thumbnail",
+          "metadata": {
+            "metadata": {},
+            "language": "en",
+            "languages": [
+              "en"
+            ],
+            "status": "PROCESSED"
+          },
+          "usermetadata": {
+            "classifications": [],
+            "relations": []
+          },
+          "fieldmetadata": [],
+          "computedmetadata": {
+            "field_classifications": [
+              {
+                "field": {
+                  "field_type": "link",
+                  "field": "link"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "Technical Documentation"
+                  }
+                ]
+              }
+            ]
+          },
+          "created": "2025-06-10T07:55:56.760226",
+          "modified": "2025-06-10T07:55:56.760237",
+          "last_seqid": 0,
+          "queue": "private",
+          "hidden": false,
+          "origin": {
+            "source_id": "",
+            "url": "https://docs.syntha.progress.com/",
+            "metadata": {},
+            "tags": [],
+            "collaborators": [],
+            "filename": "",
+            "related": [],
+            "path": "",
+            "source": "API"
+          },
+          "data": {
+            "texts": {
+              "da-50to60Title-a-title": {
+                "value": {
+                  "body": "\"Syntha Documentation Portal: Comprehensive Guides, Resources, and Support for Syntha Users\"",
+                  "format": "PLAIN",
+                  "md5": "a797be8743e6595b5a17aff582d539a2",
+                  "extract_strategy": ""
+                }
+              },
+              "da-ResourceMerchandiser-u-link": {
+                "value": {
+                  "body": "{\"title\": \"Syntha: RAG-as-a-Service Platform Overview\", \"purpose\": \"Introduces Syntha's capabilities for AI search and generative answers.\", \"ideal_audience\": [\"Technical Pre-Sales\", \"Developers\", \"Data Engineers\"], \"value_to_audience\": \"This document highlights how Syntha enables AI-driven insights and trusted answers from unstructured data, making it a valuable tool for technical and data-focused roles.\", \"sales_activation_tip\": \"Use this document to demonstrate Syntha's flexibility in indexing, retrieval, and LLM integration during technical discussions.\", \"key_message_points\": [\"Syntha delivers AI search and generative answers from unstructured data.\", \"Supports indexing and retrieval in any language.\", \"Allows customization of RAG pipelines and prompts.\", \"Compatible with any LLM for data insights.\"], \"confidence_level_to_share\": \"High\", \"link\": \"https://syntha.documentation.portal\"}",
+                  "format": "JSON",
+                  "md5": "2485675bc5fdc9651fba69d10b8711a9",
+                  "extract_strategy": ""
+                }
+              },
+              "da-15WordSummary-u-link": {
+                "value": {
+                  "body": "Syntha enables customizable AI-driven search, retrieval, and insights from unstructured multilingual data for seamless production.",
+                  "format": "PLAIN",
+                  "md5": "b71487ef42b4ac871b0f965564291958",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-u-link": {
+                "value": {
+                  "body": "\"Syntha Documentation Portal: Your Guide to RAG-as-a-Service, AI Search, and Generative Answers\"",
+                  "format": "PLAIN",
+                  "md5": "30cf04ce1c3e045981d8400071145e5f",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "links": {
+              "link": {
+                "value": {
+                  "added": "2025-06-10T07:55:56.760343Z",
+                  "headers": {},
+                  "cookies": {},
+                  "uri": "https://docs.syntha.progress.com/",
+                  "language": "",
+                  "localstorage": {},
+                  "css_selector": "",
+                  "xpath": "",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "generics": {
+              "title": {
+                "value": "Syntha documentation | Syntha Documentation Portal"
+              }
+            }
+          },
+          "fields": {
+            "/u/link": {
+              "paragraphs": {
+                "84aa65edefff4c90a610ecc299e5de00/u/link/0-921": {
+                  "score": 0.9757624268531799,
+                  "score_type": "RERANKER",
+                  "order": 4,
+                  "text": "Syntha documentation | Syntha Documentation Portal .\n\n Syntha documentation | Syntha Documentation Portal\n\n[Skip to main content](#__docusaurus_skipToContent_fallback)\n\n[Image Syntha logo](/)[Search & RAG](/docs/rag/intro)[Data ingestion](/docs/ingestion/intro)[Management](/docs/management/intro)[Developer tools](/docs/develop/intro)[No code](/docs/no-code/intro)\n\n# Syntha, the RAG-as-a-Service platform\n\nSyntha automatically delivers AI search and Generative Answers on top of your unstructured data, and provides knowledge in the form of trusted answers, in any language, and from any data.\n\nSyntha allows you to customize your RAG pipeline and bring it directly to production.\nWith Syntha you can:\n\n* Index any type of data in any language.\n* Define your own retrieval strategy.\n* Use any LLM to gain insights and knowledge from your data.\n* Customize your prompt.\n\nCopyright © 2025 Progress. Built with Docusaurus.",
+                  "id": "84aa65edefff4c90a610ecc299e5de00/u/link/0-921",
+                  "labels": [
+                    "/l/resourcetype/Technical Documentation"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 0,
+                    "start": 0,
+                    "end": 921,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": true,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            }
+          }
+        },
+        "60720239e763428bb9f09955ae24ec55": {
+          "id": "60720239e763428bb9f09955ae24ec55",
+          "slug": "60720239e763428bb9f09955ae24ec55",
+          "title": "Syntha documentation | Syntha Documentation Portal",
+          "summary": "",
+          "icon": "application/stf-link",
+          "thumbnail": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/60720239e763428bb9f09955ae24ec55/link/link/download/extracted/link_thumbnail",
+          "metadata": {
+            "metadata": {},
+            "language": "en",
+            "languages": [
+              "en"
+            ],
+            "status": "PROCESSED"
+          },
+          "usermetadata": {
+            "classifications": [],
+            "relations": []
+          },
+          "fieldmetadata": [],
+          "computedmetadata": {
+            "field_classifications": [
+              {
+                "field": {
+                  "field_type": "link",
+                  "field": "link"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "Technical Documentation"
+                  }
+                ]
+              }
+            ]
+          },
+          "created": "2025-06-10T07:56:54.546886",
+          "modified": "2025-06-10T07:56:54.546894",
+          "last_seqid": 0,
+          "queue": "private",
+          "hidden": false,
+          "origin": {
+            "source_id": "",
+            "url": "https://docs.syntha.progress.com/",
+            "metadata": {},
+            "tags": [],
+            "collaborators": [],
+            "filename": "",
+            "related": [],
+            "path": "",
+            "source": "API"
+          },
+          "data": {
+            "texts": {
+              "da-50to60Title-a-title": {
+                "value": {
+                  "body": "\"Syntha Documentation Portal: Comprehensive Guides, Resources, and Support for Syntha Users\"",
+                  "format": "PLAIN",
+                  "md5": "a797be8743e6595b5a17aff582d539a2",
+                  "extract_strategy": ""
+                }
+              },
+              "da-ResourceMerchandiser-u-link": {
+                "value": {
+                  "body": "{\"title\": \"Syntha: RAG-as-a-Service Platform Overview\", \"purpose\": \"Introduces Syntha's capabilities for AI-driven search and generative answers.\", \"ideal_audience\": [\"Technical Pre-Sales\", \"Developers\", \"Data Engineers\", \"AI Specialists\"], \"value_to_audience\": \"This document highlights how Syntha enables AI-powered search and generative answers from unstructured data, making it a valuable tool for customizing and deploying RAG pipelines.\", \"sales_activation_tip\": \"Use this document to demonstrate Syntha's flexibility in indexing, retrieval, and LLM integration during technical discussions.\", \"key_message_points\": [\"Syntha delivers AI search and generative answers from unstructured data.\", \"Supports indexing and retrieval in any language.\", \"Allows customization of RAG pipelines and prompts.\", \"Compatible with any LLM for insights and knowledge extraction.\"], \"confidence_level_to_share\": \"High\", \"link\": \"https://syntha-documentation-portal.com/docs/rag/intro\"}",
+                  "format": "JSON",
+                  "md5": "854c8ff4416c8fa3e889a005757bdfc0",
+                  "extract_strategy": ""
+                }
+              },
+              "da-15WordSummary-u-link": {
+                "value": {
+                  "body": "Syntha enables customizable AI-driven search, retrieval, and insights from unstructured multilingual data for seamless production.",
+                  "format": "PLAIN",
+                  "md5": "b71487ef42b4ac871b0f965564291958",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-u-link": {
+                "value": {
+                  "body": "\"Syntha Documentation Portal: Your Guide to RAG-as-a-Service, AI Search, and Generative Answers\"",
+                  "format": "PLAIN",
+                  "md5": "30cf04ce1c3e045981d8400071145e5f",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "links": {
+              "link": {
+                "value": {
+                  "added": "2025-06-10T07:56:54.546992Z",
+                  "headers": {},
+                  "cookies": {},
+                  "uri": "https://docs.syntha.progress.com/",
+                  "language": "",
+                  "localstorage": {},
+                  "css_selector": "",
+                  "xpath": "",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "generics": {
+              "title": {
+                "value": "Syntha documentation | Syntha Documentation Portal"
+              }
+            }
+          },
+          "fields": {
+            "/u/link": {
+              "paragraphs": {
+                "60720239e763428bb9f09955ae24ec55/u/link/0-921": {
+                  "score": 0.9757624268531799,
+                  "score_type": "RERANKER",
+                  "order": 5,
+                  "text": "Syntha documentation | Syntha Documentation Portal .\n\n Syntha documentation | Syntha Documentation Portal\n\n[Skip to main content](#__docusaurus_skipToContent_fallback)\n\n[Image Syntha logo](/)[Search & RAG](/docs/rag/intro)[Data ingestion](/docs/ingestion/intro)[Management](/docs/management/intro)[Developer tools](/docs/develop/intro)[No code](/docs/no-code/intro)\n\n# Syntha, the RAG-as-a-Service platform\n\nSyntha automatically delivers AI search and Generative Answers on top of your unstructured data, and provides knowledge in the form of trusted answers, in any language, and from any data.\n\nSyntha allows you to customize your RAG pipeline and bring it directly to production.\nWith Syntha you can:\n\n* Index any type of data in any language.\n* Define your own retrieval strategy.\n* Use any LLM to gain insights and knowledge from your data.\n* Customize your prompt.\n\nCopyright © 2025 Progress. Built with Docusaurus.",
+                  "id": "60720239e763428bb9f09955ae24ec55/u/link/0-921",
+                  "labels": [
+                    "/l/resourcetype/Technical Documentation"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 0,
+                    "start": 0,
+                    "end": 921,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": true,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            },
+            "/t/da-15WordSummary-u-link": {
+              "paragraphs": {
+                "60720239e763428bb9f09955ae24ec55/t/da-15WordSummary-u-link/0-130": {
+                  "score": 0.915808916091919,
+                  "score_type": "RERANKER",
+                  "order": 8,
+                  "text": "Syntha enables customizable AI-driven search, retrieval, and insights from unstructured multilingual data for seamless production.",
+                  "id": "60720239e763428bb9f09955ae24ec55/t/da-15WordSummary-u-link/0-130",
+                  "labels": [
+                    "/k/text"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 0,
+                    "start": 0,
+                    "end": 130,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            }
+          }
+        },
+        "17280bb550ef403d8babaa33f2f7320b": {
+          "id": "17280bb550ef403d8babaa33f2f7320b",
+          "slug": "17280bb550ef403d8babaa33f2f7320b",
+          "title": "Syntha documentation | Syntha Documentation Portal",
+          "summary": "",
+          "icon": "application/stf-link",
+          "thumbnail": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/17280bb550ef403d8babaa33f2f7320b/link/link/download/extracted/link_thumbnail",
+          "metadata": {
+            "metadata": {},
+            "language": "en",
+            "languages": [
+              "en"
+            ],
+            "status": "PROCESSED"
+          },
+          "usermetadata": {
+            "classifications": [],
+            "relations": []
+          },
+          "fieldmetadata": [],
+          "computedmetadata": {
+            "field_classifications": [
+              {
+                "field": {
+                  "field_type": "link",
+                  "field": "link"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "Technical Documentation"
+                  }
+                ]
+              }
+            ]
+          },
+          "created": "2025-06-10T07:58:32.980711",
+          "modified": "2025-06-10T07:58:32.980718",
+          "last_seqid": 0,
+          "queue": "private",
+          "hidden": false,
+          "origin": {
+            "source_id": "",
+            "url": "https://docs.syntha.progress.com/",
+            "metadata": {},
+            "tags": [],
+            "collaborators": [],
+            "filename": "",
+            "related": [],
+            "path": "",
+            "source": "API"
+          },
+          "data": {
+            "texts": {
+              "da-50to60Title-a-title": {
+                "value": {
+                  "body": "\"Syntha Documentation Portal: Comprehensive Guides, Resources, and Support for Syntha Users\"",
+                  "format": "PLAIN",
+                  "md5": "a797be8743e6595b5a17aff582d539a2",
+                  "extract_strategy": ""
+                }
+              },
+              "da-ResourceMerchandiser-u-link": {
+                "value": {
+                  "body": "{\"title\": \"Syntha: RAG-as-a-Service Platform Overview\", \"purpose\": \"Introduces Syntha's capabilities for AI-driven search and generative answers.\", \"ideal_audience\": [\"Technical Pre-Sales\", \"Developers\", \"Data Engineers\", \"AI Specialists\"], \"value_to_audience\": \"Provides a comprehensive overview of Syntha's ability to deliver trusted AI-driven answers from unstructured data.\", \"sales_activation_tip\": \"Use this document to showcase Syntha's flexibility in indexing, retrieval, and LLM integration during client presentations.\", \"key_message_points\": [\"Syntha delivers AI search and generative answers from unstructured data.\", \"Supports indexing and retrieval in any language.\", \"Allows customization of RAG pipelines and prompts.\", \"Compatible with any LLM for data insights.\"], \"confidence_level_to_share\": \"High\", \"link\": \"https://syntha.documentation.portal\"}",
+                  "format": "JSON",
+                  "md5": "b0c7d00c6f699fac69f41e341b7589f8",
+                  "extract_strategy": ""
+                }
+              },
+              "da-15WordSummary-u-link": {
+                "value": {
+                  "body": "Syntha enables customizable AI-driven search, retrieval, and insights from unstructured multilingual data for seamless production.",
+                  "format": "PLAIN",
+                  "md5": "b71487ef42b4ac871b0f965564291958",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-u-link": {
+                "value": {
+                  "body": "\"Syntha Documentation Portal: Your Guide to RAG-as-a-Service, AI Search, and Generative Answers\"",
+                  "format": "PLAIN",
+                  "md5": "30cf04ce1c3e045981d8400071145e5f",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "links": {
+              "link": {
+                "value": {
+                  "added": "2025-06-10T07:58:32.980794Z",
+                  "headers": {},
+                  "cookies": {},
+                  "uri": "https://docs.syntha.progress.com/",
+                  "language": "",
+                  "localstorage": {},
+                  "css_selector": "",
+                  "xpath": "",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "generics": {
+              "title": {
+                "value": "Syntha documentation | Syntha Documentation Portal"
+              }
+            }
+          },
+          "fields": {
+            "/u/link": {
+              "paragraphs": {
+                "17280bb550ef403d8babaa33f2f7320b/u/link/0-921": {
+                  "score": 0.9757624268531799,
+                  "score_type": "RERANKER",
+                  "order": 6,
+                  "text": "Syntha documentation | Syntha Documentation Portal .\n\n Syntha documentation | Syntha Documentation Portal\n\n[Skip to main content](#__docusaurus_skipToContent_fallback)\n\n[Image Syntha logo](/)[Search & RAG](/docs/rag/intro)[Data ingestion](/docs/ingestion/intro)[Management](/docs/management/intro)[Developer tools](/docs/develop/intro)[No code](/docs/no-code/intro)\n\n# Syntha, the RAG-as-a-Service platform\n\nSyntha automatically delivers AI search and Generative Answers on top of your unstructured data, and provides knowledge in the form of trusted answers, in any language, and from any data.\n\nSyntha allows you to customize your RAG pipeline and bring it directly to production.\nWith Syntha you can:\n\n* Index any type of data in any language.\n* Define your own retrieval strategy.\n* Use any LLM to gain insights and knowledge from your data.\n* Customize your prompt.\n\nCopyright © 2025 Progress. Built with Docusaurus.",
+                  "id": "17280bb550ef403d8babaa33f2f7320b/u/link/0-921",
+                  "labels": [
+                    "/l/resourcetype/Technical Documentation"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 0,
+                    "start": 0,
+                    "end": 921,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": true,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            }
+          }
+        },
+        "21cb6ed05f7a4076b63609f6f1d2e3c9": {
+          "id": "21cb6ed05f7a4076b63609f6f1d2e3c9",
+          "slug": "21cb6ed05f7a4076b63609f6f1d2e3c9",
+          "title": "Stored search configurations | Syntha Documentation Portal",
+          "summary": "",
+          "icon": "application/stf-link",
+          "thumbnail": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/21cb6ed05f7a4076b63609f6f1d2e3c9/link/link/download/extracted/link_thumbnail",
+          "metadata": {
+            "metadata": {},
+            "language": "en",
+            "languages": [
+              "en"
+            ],
+            "status": "PROCESSED"
+          },
+          "usermetadata": {
+            "classifications": [],
+            "relations": []
+          },
+          "fieldmetadata": [],
+          "computedmetadata": {
+            "field_classifications": [
+              {
+                "field": {
+                  "field_type": "link",
+                  "field": "link"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "Technical Documentation"
+                  }
+                ]
+              }
+            ]
+          },
+          "created": "2025-06-10T07:55:59.109935",
+          "modified": "2025-06-10T07:55:59.109942",
+          "last_seqid": 0,
+          "queue": "private",
+          "hidden": false,
+          "origin": {
+            "source_id": "",
+            "url": "https://docs.syntha.progress.com/docs/rag/advanced/search-configurations",
+            "metadata": {},
+            "tags": [],
+            "collaborators": [],
+            "filename": "",
+            "related": [],
+            "path": "",
+            "source": "API"
+          },
+          "data": {
+            "texts": {
+              "da-50to60Title-a-title": {
+                "value": {
+                  "body": "\"Stored Search Configurations | Syntha Documentation Portal: Manage and Optimize Saved Searches for Efficient Data Retrieval\"",
+                  "format": "PLAIN",
+                  "md5": "cabfb5d92564ca7e8636e28c4e7811f2",
+                  "extract_strategy": ""
+                }
+              },
+              "da-ResourceMerchandiser-u-link": {
+                "value": {
+                  "body": "{\"title\": \"Guide to Stored Search Configurations in Syntha\", \"purpose\": \"Explains how to create, manage, and use stored search configurations in Syntha.\", \"ideal_audience\": [\"Technical Pre-Sales\", \"Developers\", \"System Administrators\"], \"value_to_audience\": \"This document provides a clear guide to centralizing and managing search configurations, enabling efficient and flexible search strategies.\", \"sales_activation_tip\": \"Use this document to demonstrate the ease of managing search configurations during technical discussions.\", \"key_message_points\": [\"Syntha allows storing search configurations for centralized management.\", \"Configurations can be used for both 'find' and 'ask' searches.\", \"Stored configurations simplify switching between search setups without code changes.\", \"Parameters like filters, prompts, and security settings can be pre-defined.\", \"Enhances efficiency by automating parameter loading during searches.\"], \"confidence_level_to_share\": \"High\", \"link\": \"https://docs.syntha.com/rag/advanced/search-configurations\", \"visual_asset\": \"https://docs.syntha.com/assets/images/stored-search-configurations.png\"}",
+                  "format": "JSON",
+                  "md5": "523a22209bb20957d2fe99088e5b63a0",
+                  "extract_strategy": ""
+                }
+              },
+              "da-15WordSummary-u-link": {
+                "value": {
+                  "body": "Syntha enables centralized, customizable stored search configurations for efficient and flexible search management.",
+                  "format": "PLAIN",
+                  "md5": "4302bfb86ec91fa8f529d525e144d22b",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-u-link": {
+                "value": {
+                  "body": "\"Stored Search Configurations: Centralized Search Management for Find & Ask Endpoints | Syntha Documentation Portal\"",
+                  "format": "PLAIN",
+                  "md5": "1caeafa4b97b6cd8ff0327ebb32df767",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "links": {
+              "link": {
+                "value": {
+                  "added": "2025-06-10T07:55:59.110022Z",
+                  "headers": {},
+                  "cookies": {},
+                  "uri": "https://docs.syntha.progress.com/docs/rag/advanced/search-configurations",
+                  "language": "",
+                  "localstorage": {},
+                  "css_selector": "",
+                  "xpath": "",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "generics": {
+              "title": {
+                "value": "Stored search configurations | Syntha Documentation Portal"
+              }
+            }
+          },
+          "fields": {
+            "/t/da-15WordSummary-u-link": {
+              "paragraphs": {
+                "21cb6ed05f7a4076b63609f6f1d2e3c9/t/da-15WordSummary-u-link/0-115": {
+                  "score": 0.9175984263420105,
+                  "score_type": "RERANKER",
+                  "order": 7,
+                  "text": "Syntha enables centralized, customizable stored search configurations for efficient and flexible search management.",
+                  "id": "21cb6ed05f7a4076b63609f6f1d2e3c9/t/da-15WordSummary-u-link/0-115",
+                  "labels": [
+                    "/k/text"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 0,
+                    "start": 0,
+                    "end": 115,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            }
+          }
+        },
+        "74da52ee4c4a4f16a36aece2e5838623": {
+          "id": "74da52ee4c4a4f16a36aece2e5838623",
+          "slug": "74da52ee4c4a4f16a36aece2e5838623",
+          "title": "Getting Started | Syntha Documentation Portal",
+          "summary": "",
+          "icon": "application/stf-link",
+          "thumbnail": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/74da52ee4c4a4f16a36aece2e5838623/link/link/download/extracted/link_thumbnail",
+          "metadata": {
+            "metadata": {},
+            "language": "en",
+            "languages": [
+              "en"
+            ],
+            "status": "PROCESSED"
+          },
+          "usermetadata": {
+            "classifications": [],
+            "relations": []
+          },
+          "fieldmetadata": [],
+          "computedmetadata": {
+            "field_classifications": [
+              {
+                "field": {
+                  "field_type": "link",
+                  "field": "link"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "Technical Documentation"
+                  }
+                ]
+              }
+            ]
+          },
+          "created": "2025-06-10T07:57:35.289979",
+          "modified": "2025-06-10T07:57:35.289986",
+          "last_seqid": 0,
+          "queue": "private",
+          "hidden": false,
+          "origin": {
+            "source_id": "",
+            "url": "https://docs.syntha.progress.com/docs/ingestion/intro",
+            "metadata": {},
+            "tags": [],
+            "collaborators": [],
+            "filename": "",
+            "related": [],
+            "path": "",
+            "source": "API"
+          },
+          "data": {
+            "texts": {
+              "da-50to60Title-a-title": {
+                "value": {
+                  "body": "\"Getting Started with Syntha: Comprehensive Documentation Portal for Easy Setup and Navigation\"",
+                  "format": "PLAIN",
+                  "md5": "8e7521237e7d2aaa1a2f59a0aaa72c8e",
+                  "extract_strategy": ""
+                }
+              },
+              "da-ResourceMerchandiser-u-link": {
+                "value": {
+                  "body": "{\"title\": \"Getting Started with Data Ingestion in Syntha\", \"purpose\": \"Guides users on how to ingest data into Syntha for advanced search capabilities.\", \"ideal_audience\": [\"Technical Pre-Sales\", \"Developers\", \"Data Engineers\"], \"value_to_audience\": \"Provides clear instructions on how to start ingesting data into Syntha, enabling users to leverage its advanced search features.\", \"sales_activation_tip\": \"Share this document with technical teams during onboarding to demonstrate the ease of data ingestion in Syntha.\", \"key_message_points\": [\"Data ingestion is the first step to using Syntha effectively.\", \"Syntha supports programmatic ingestion via REST API and manual uploads via the dashboard.\", \"Repeatable ingestions can be automated using the REST API, while one-time ingestions can be done through the dashboard.\"], \"confidence_level_to_share\": \"High\", \"link\": \"/docs/ingestion/intro\"}",
+                  "format": "JSON",
+                  "md5": "337f1e59e93bf341d5e4a9ee9eba531e",
+                  "extract_strategy": ""
+                }
+              },
+              "da-15WordSummary-u-link": {
+                "value": {
+                  "body": "Syntha guides users on data ingestion methods, enabling advanced search via API or dashboard tools.",
+                  "format": "PLAIN",
+                  "md5": "2e729406b1ed5975fc44114ebf575b01",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-u-link": {
+                "value": {
+                  "body": "\"Getting Started with Syntha: A Step-by-Step Guide to Data Ingestion and Management\"",
+                  "format": "PLAIN",
+                  "md5": "a0e6d1b902f34e615f88867ae975c8ee",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "links": {
+              "link": {
+                "value": {
+                  "added": "2025-06-10T07:57:35.290050Z",
+                  "headers": {},
+                  "cookies": {},
+                  "uri": "https://docs.syntha.progress.com/docs/ingestion/intro",
+                  "language": "",
+                  "localstorage": {},
+                  "css_selector": "",
+                  "xpath": "",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "generics": {
+              "title": {
+                "value": "Getting Started | Syntha Documentation Portal"
+              }
+            }
+          },
+          "fields": {
+            "/t/da-50to60Title-a-title": {
+              "paragraphs": {
+                "74da52ee4c4a4f16a36aece2e5838623/t/da-50to60Title-a-title/0-95": {
+                  "score": 0.8756807446479797,
+                  "score_type": "RERANKER",
+                  "order": 10,
+                  "text": " Getting Started with Syntha: Comprehensive Documentation Portal for Easy Setup and Navigation ",
+                  "id": "74da52ee4c4a4f16a36aece2e5838623/t/da-50to60Title-a-title/0-95",
+                  "labels": [
+                    "/k/text"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 0,
+                    "start": 0,
+                    "end": 95,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            },
+            "/t/da-50to60Title-u-link": {
+              "paragraphs": {
+                "74da52ee4c4a4f16a36aece2e5838623/t/da-50to60Title-u-link/0-84": {
+                  "score": 0.24346251785755157,
+                  "score_type": "RERANKER",
+                  "order": 17,
+                  "text": " Getting Started with Syntha: A Step-by-Step Guide to Data Ingestion and Management ",
+                  "id": "74da52ee4c4a4f16a36aece2e5838623/t/da-50to60Title-u-link/0-84",
+                  "labels": [
+                    "/k/text"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 0,
+                    "start": 0,
+                    "end": 84,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            }
+          }
+        },
+        "e8e6533395d9416081a2f9de96138d2d": {
+          "id": "e8e6533395d9416081a2f9de96138d2d",
+          "slug": "e8e6533395d9416081a2f9de96138d2d",
+          "title": "Getting Started | Syntha Documentation Portal",
+          "summary": "",
+          "icon": "application/stf-link",
+          "thumbnail": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/e8e6533395d9416081a2f9de96138d2d/link/link/download/extracted/link_thumbnail",
+          "metadata": {
+            "metadata": {},
+            "language": "en",
+            "languages": [
+              "en"
+            ],
+            "status": "PROCESSED"
+          },
+          "usermetadata": {
+            "classifications": [],
+            "relations": []
+          },
+          "fieldmetadata": [],
+          "computedmetadata": {
+            "field_classifications": [
+              {
+                "field": {
+                  "field_type": "link",
+                  "field": "link"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "Technical Documentation"
+                  }
+                ]
+              }
+            ]
+          },
+          "created": "2025-06-10T07:55:59.711562",
+          "modified": "2025-06-10T07:55:59.711569",
+          "last_seqid": 0,
+          "queue": "private",
+          "hidden": false,
+          "origin": {
+            "source_id": "",
+            "url": "https://docs.syntha.progress.com/docs/rag/intro#find-endpoint",
+            "metadata": {},
+            "tags": [],
+            "collaborators": [],
+            "filename": "",
+            "related": [],
+            "path": "",
+            "source": "API"
+          },
+          "data": {
+            "texts": {
+              "da-50to60Title-a-title": {
+                "value": {
+                  "body": "\"Getting Started with Syntha: Comprehensive Documentation Portal for Easy Onboarding and Setup\"",
+                  "format": "PLAIN",
+                  "md5": "37d84799b7cf5c83c21c5ae179fd7b94",
+                  "extract_strategy": ""
+                }
+              },
+              "da-ResourceMerchandiser-u-link": {
+                "value": {
+                  "body": "{\"title\": \"Getting Started with Search & RAG\", \"purpose\": \"Introduces users to Syntha's Search & RAG capabilities and API endpoints.\", \"ideal_audience\": [\"Developers\", \"Technical Pre-Sales\", \"Data Engineers\"], \"value_to_audience\": \"Provides a clear starting point for leveraging Syntha's Search & RAG features, including API usage examples.\", \"sales_activation_tip\": \"Use this document to demonstrate the ease of integrating Syntha's Search & RAG capabilities into applications.\", \"key_message_points\": [\"Syntha's Search & RAG feature combines semantic and keyword search for precise data retrieval.\", \"The `/find` endpoint is used for searching data, while the `/ask` endpoint generates answers using LLMs.\", \"API examples are provided for quick integration into applications.\", \"The Syntha dashboard offers a user-friendly interface to explore search and generative answer capabilities.\"], \"confidence_level_to_share\": \"High\", \"link\": \"https://docs.syntha.com/docs/rag/intro\"}",
+                  "format": "JSON",
+                  "md5": "7e4a6b030763d32887daf597d5324866",
+                  "extract_strategy": ""
+                }
+              },
+              "da-15WordSummary-u-link": {
+                "value": {
+                  "body": "Guide for Syntha users on utilizing Search & RAG features, including endpoints and customization options.",
+                  "format": "PLAIN",
+                  "md5": "713707d3bb434fdc133080747d70d882",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-u-link": {
+                "value": {
+                  "body": "\"Getting Started with Syntha: A Beginner's Guide to Search & RAG Features and API Endpoints\"",
+                  "format": "PLAIN",
+                  "md5": "9bbafee03b3579b022ce987e8870159d",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "links": {
+              "link": {
+                "value": {
+                  "added": "2025-06-10T07:55:59.711646Z",
+                  "headers": {},
+                  "cookies": {},
+                  "uri": "https://docs.syntha.progress.com/docs/rag/intro#find-endpoint",
+                  "language": "",
+                  "localstorage": {},
+                  "css_selector": "",
+                  "xpath": "",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "generics": {
+              "title": {
+                "value": "Getting Started | Syntha Documentation Portal"
+              }
+            }
+          },
+          "fields": {
+            "/t/da-50to60Title-a-title": {
+              "paragraphs": {
+                "e8e6533395d9416081a2f9de96138d2d/t/da-50to60Title-a-title/0-95": {
+                  "score": 0.8267117738723755,
+                  "score_type": "RERANKER",
+                  "order": 11,
+                  "text": " Getting Started with Syntha: Comprehensive Documentation Portal for Easy Onboarding and Setup ",
+                  "id": "e8e6533395d9416081a2f9de96138d2d/t/da-50to60Title-a-title/0-95",
+                  "labels": [
+                    "/k/text"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 0,
+                    "start": 0,
+                    "end": 95,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            }
+          }
+        },
+        "12c6eea32957eeb369673ae8c2f8b973": {
+          "id": "12c6eea32957eeb369673ae8c2f8b973",
+          "slug": "12c6eea32957eeb369673ae8c2f8b973",
+          "title": "Syntha API Guide- Using the resources, find, and ask Endpoints.docx",
+          "summary": "",
+          "icon": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "thumbnail": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/12c6eea32957eeb369673ae8c2f8b973/file/12c6eea32957eeb369673ae8c2f8b973/download/extracted/file_thumbnail",
+          "metadata": {
+            "metadata": {},
+            "language": "en",
+            "languages": [
+              "en"
+            ],
+            "status": "PROCESSED"
+          },
+          "usermetadata": {
+            "classifications": [],
+            "relations": []
+          },
+          "fieldmetadata": [],
+          "computedmetadata": {
+            "field_classifications": [
+              {
+                "field": {
+                  "field_type": "file",
+                  "field": "12c6eea32957eeb369673ae8c2f8b973"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "API"
+                  }
+                ]
+              },
+              {
+                "field": {
+                  "field_type": "generic",
+                  "field": "title"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "API"
+                  }
+                ]
+              }
+            ]
+          },
+          "created": "2025-06-12T11:34:39.841617",
+          "last_seqid": 0,
+          "queue": "private",
+          "hidden": false,
+          "data": {
+            "texts": {
+              "da-ResourceMerchandiser-f-12c6eea32957eeb369673ae8c2f8b973": {
+                "value": {
+                  "body": "{\"title\": \"Syntha API Guide: Using the /resources, /find, and /ask Endpoints\", \"purpose\": \"Provides developers with detailed instructions for leveraging Syntha's API endpoints for data ingestion, search, and Q&A.\", \"ideal_audience\": [\"Developers\", \"Technical Pre-Sales\", \"Solution Architects\"], \"value_to_audience\": \"This guide enables developers to effectively integrate Syntha's API into their applications, offering powerful data ingestion, search, and Q&A capabilities.\", \"sales_activation_tip\": \"Share this guide with technical teams during solution design to demonstrate Syntha's API capabilities and ease of integration.\", \"key_message_points\": [\"The /resources endpoint allows for managing and ingesting data into Syntha's Knowledge Box.\", \"The /find endpoint provides advanced semantic and keyword search capabilities.\", \"The /ask endpoint enables generative Q&A using Syntha's Retrieval-Augmented Generation (RAG) approach.\", \"Detailed examples and best practices are provided for each endpoint.\", \"Rate limits and strategies for handling them are clearly explained.\"], \"confidence_level_to_share\": \"High\", \"link\": \"https://.syntha.cloud/api/v1/kb/guide\", \"visual_asset\": \"https://.syntha.cloud/assets/syntha-api-guide-cover.png\"}",
+                  "format": "JSON",
+                  "md5": "0914e93a0ded10dabeea99fdcb3cc3fe",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-a-title": {
+                "value": {
+                  "body": "\"Syntha API Guide: Comprehensive Resource for Finding and Using Endpoints\"",
+                  "format": "PLAIN",
+                  "md5": "5dabdc37a2f9e43ba267dd93798c4b66",
+                  "extract_strategy": ""
+                }
+              },
+              "da-15WordSummary-f-12c6eea32957eeb369673ae8c2f8b973": {
+                "value": {
+                  "body": "Syntha API enables developers to ingest, search, and generate answers from custom data using AI.",
+                  "format": "PLAIN",
+                  "md5": "31f3a51ac54c2a098a668e00714a122f",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-f-12c6eea32957eeb369673ae8c2f8b973": {
+                "value": {
+                  "body": "\"Syntha API Guide: Mastering /resources, /find, and /ask Endpoints for AI-Powered Data Search and Q&A\"",
+                  "format": "PLAIN",
+                  "md5": "b42384a8c3a8ee83952582558840b590",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "files": {
+              "12c6eea32957eeb369673ae8c2f8b973": {
+                "value": {
+                  "added": "2025-06-12T11:34:39.841635Z",
+                  "file": {
+                    "uri": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/12c6eea32957eeb369673ae8c2f8b973/file/12c6eea32957eeb369673ae8c2f8b973/download/field",
+                    "size": 38659,
+                    "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "filename": "Syntha%20API%20Guide-%20Using%20the%20resources%2C%20find%2C%20and%20ask%20Endpoints.docx",
+                    "md5": "12c6eea32957eeb369673ae8c2f8b973"
+                  },
+                  "language": "",
+                  "password": "",
+                  "external": false,
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "generics": {
+              "title": {
+                "value": "Syntha API Guide- Using the resources, find, and ask Endpoints.docx"
+              }
+            }
+          },
+          "fields": {
+            "/t/da-15WordSummary-f-12c6eea32957eeb369673ae8c2f8b973": {
+              "paragraphs": {
+                "12c6eea32957eeb369673ae8c2f8b973/t/da-15WordSummary-f-12c6eea32957eeb369673ae8c2f8b973/0-96": {
+                  "score": 0.8031737804412842,
+                  "score_type": "RERANKER",
+                  "order": 12,
+                  "text": "Syntha API enables developers to ingest, search, and generate answers from custom data using AI.",
+                  "id": "12c6eea32957eeb369673ae8c2f8b973/t/da-15WordSummary-f-12c6eea32957eeb369673ae8c2f8b973/0-96",
+                  "labels": [
+                    "/k/text"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 0,
+                    "start": 0,
+                    "end": 96,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            }
+          }
+        },
+        "59f74d355bf2fa72a81d45b4190a1dc8": {
+          "id": "59f74d355bf2fa72a81d45b4190a1dc8",
+          "slug": "59f74d355bf2fa72a81d45b4190a1dc8",
+          "title": "Commerce - Before and After (Syntha).docx",
+          "summary": "",
+          "icon": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "thumbnail": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/59f74d355bf2fa72a81d45b4190a1dc8/file/59f74d355bf2fa72a81d45b4190a1dc8/download/extracted/file_thumbnail",
+          "metadata": {
+            "metadata": {},
+            "language": "en",
+            "languages": [
+              "en"
+            ],
+            "status": "PROCESSED"
+          },
+          "usermetadata": {
+            "classifications": [],
+            "relations": []
+          },
+          "fieldmetadata": [],
+          "computedmetadata": {
+            "field_classifications": [
+              {
+                "field": {
+                  "field_type": "file",
+                  "field": "59f74d355bf2fa72a81d45b4190a1dc8"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "Marketing Assets"
+                  }
+                ]
+              },
+              {
+                "field": {
+                  "field_type": "generic",
+                  "field": "title"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "Marketing Assets"
+                  }
+                ]
+              }
+            ]
+          },
+          "created": "2025-05-23T00:24:38.176827",
+          "last_seqid": 0,
+          "queue": "private",
+          "hidden": false,
+          "data": {
+            "texts": {
+              "da-50to60Title-f-59f74d355bf2fa72a81d45b4190a1dc8": {
+                "value": {
+                  "body": "\"Revolutionizing Commerce: Before and After with Progress Syntha Technology\"",
+                  "format": "PLAIN",
+                  "md5": "e8946274d82683170b73f5be722ba5ab",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-a-title": {
+                "value": {
+                  "body": "\"Commerce Transformation: Exploring Syntha's Impact Before and After Implementation\"",
+                  "format": "PLAIN",
+                  "md5": "25b685b40519cef729dfb435607f13b6",
+                  "extract_strategy": ""
+                }
+              },
+              "da-15WordSummary-f-59f74d355bf2fa72a81d45b4190a1dc8": {
+                "value": {
+                  "body": "Progress Syntha revolutionizes commerce with AI-driven personalization, intelligent search, and seamless customer experiences.",
+                  "format": "PLAIN",
+                  "md5": "6262ca6874d65042558170c7b6c21043",
+                  "extract_strategy": ""
+                }
+              },
+              "da-ResourceMerchandiser-f-59f74d355bf2fa72a81d45b4190a1dc8": {
+                "value": {
+                  "body": "{\"title\": \"Transforming Commerce with Progress Syntha Technology\", \"purpose\": \"Showcases the transformational potential of Progress Syntha in digital commerce.\", \"ideal_audience\": [\"Enterprise Decision-Makers\", \"E-commerce Strategists\", \"Retail Technology Leaders\"], \"value_to_audience\": \"Demonstrates how Progress Syntha can revolutionize digital commerce by enhancing personalization, search accuracy, and customer satisfaction.\", \"sales_activation_tip\": \"Use this document to illustrate the tangible benefits of Syntha during client presentations or strategy discussions.\", \"key_message_points\": [\"Progress Syntha transforms fragmented commerce experiences into hyper-personalized, intelligent journeys.\", \"Key metrics improve significantly: search-to-conversion rates triple, cart abandonment drops below 40%, and support satisfaction soars to 92%.\", \"Syntha's AI capabilities include semantic search, dynamic knowledge graphs, and multilingual support.\", \"The platform integrates seamlessly across the digital commerce stack, breaking down silos and enhancing data connectivity.\", \"Syntha acts as an AI commerce concierge, delivering context-rich, trustworthy answers and boosting average order value.\"], \"confidence_level_to_share\": \"High\", \"link\": \"https://example.com/progress-syntha-commerce-transformation\", \"visual_asset\": \"https://example.com/assets/syntha-commerce-cover.jpg\"}",
+                  "format": "JSON",
+                  "md5": "6150f021c7d9a72a9f10fa43fc350e4a",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "files": {
+              "59f74d355bf2fa72a81d45b4190a1dc8": {
+                "value": {
+                  "added": "2025-05-23T00:24:38.176848Z",
+                  "file": {
+                    "uri": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/59f74d355bf2fa72a81d45b4190a1dc8/file/59f74d355bf2fa72a81d45b4190a1dc8/download/field",
+                    "size": 22411,
+                    "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "filename": "Commerce%20-%20Before%20and%20After%20(Syntha).docx",
+                    "md5": "59f74d355bf2fa72a81d45b4190a1dc8"
+                  },
+                  "language": "",
+                  "password": "",
+                  "external": false,
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "generics": {
+              "title": {
+                "value": "Commerce - Before and After (Syntha).docx"
+              }
+            }
+          },
+          "fields": {
+            "/f/59f74d355bf2fa72a81d45b4190a1dc8": {
+              "paragraphs": {
+                "59f74d355bf2fa72a81d45b4190a1dc8/f/59f74d355bf2fa72a81d45b4190a1dc8/8318-8427": {
+                  "score": 0.765943706035614,
+                  "score_type": "RERANKER",
+                  "order": 13,
+                  "text": " \n This isn't search. \n \n This is intelligent. Connected. Personalized commerce. \n \n This… is Syntha. \n \n \n ",
+                  "id": "59f74d355bf2fa72a81d45b4190a1dc8/f/59f74d355bf2fa72a81d45b4190a1dc8/8318-8427",
+                  "labels": [
+                    "/k/text"
+                  ],
+                  "position": {
+                    "page_number": 4,
+                    "index": 28,
+                    "start": 8318,
+                    "end": 8427,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": true,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            }
+          }
+        },
+        "40f5bc39b8324f9eac93af76bd98f155": {
+          "id": "40f5bc39b8324f9eac93af76bd98f155",
+          "slug": "40f5bc39b8324f9eac93af76bd98f155",
+          "title": "Getting Started | Syntha Documentation Portal",
+          "summary": "",
+          "icon": "application/stf-link",
+          "thumbnail": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/40f5bc39b8324f9eac93af76bd98f155/link/link/download/extracted/link_thumbnail",
+          "metadata": {
+            "metadata": {},
+            "language": "en",
+            "languages": [
+              "en"
+            ],
+            "status": "PROCESSED"
+          },
+          "usermetadata": {
+            "classifications": [],
+            "relations": []
+          },
+          "fieldmetadata": [],
+          "computedmetadata": {
+            "field_classifications": [
+              {
+                "field": {
+                  "field_type": "link",
+                  "field": "link"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "Technical Documentation"
+                  }
+                ]
+              }
+            ]
+          },
+          "created": "2025-06-10T07:56:55.923702",
+          "modified": "2025-06-10T07:56:55.923709",
+          "last_seqid": 0,
+          "queue": "private",
+          "hidden": false,
+          "origin": {
+            "source_id": "",
+            "url": "https://docs.syntha.progress.com/docs/ingestion/intro#",
+            "metadata": {},
+            "tags": [],
+            "collaborators": [],
+            "filename": "",
+            "related": [],
+            "path": "",
+            "source": "API"
+          },
+          "data": {
+            "texts": {
+              "da-50to60Title-a-title": {
+                "value": {
+                  "body": "\"Getting Started with Syntha: Comprehensive Documentation Portal for Easy Onboarding and Setup\"",
+                  "format": "PLAIN",
+                  "md5": "37d84799b7cf5c83c21c5ae179fd7b94",
+                  "extract_strategy": ""
+                }
+              },
+              "da-ResourceMerchandiser-u-link": {
+                "value": {
+                  "body": "{\"title\": \"Getting Started with Data Ingestion in Syntha\", \"purpose\": \"Guides users on how to ingest data into Syntha for advanced search capabilities.\", \"ideal_audience\": [\"Technical Pre-Sales\", \"Developers\", \"Data Engineers\"], \"value_to_audience\": \"Provides clear instructions on how to start ingesting data into Syntha, enabling users to leverage its advanced search features.\", \"sales_activation_tip\": \"Use this document to demonstrate the ease of setting up data ingestion during technical discussions or demos.\", \"key_message_points\": [\"Data ingestion is the first step to using Syntha effectively.\", \"Syntha supports both programmatic and manual data ingestion methods.\", \"Repeatable ingestions can be automated using the REST API.\", \"One-time ingestions can be done via the Syntha Dashboard.\", \"Advanced search capabilities are enabled after data ingestion.\"], \"confidence_level_to_share\": \"High\", \"link\": \"/docs/ingestion/intro\"}",
+                  "format": "JSON",
+                  "md5": "cdcf9a3f4268d506bcf66d4186c47f7a",
+                  "extract_strategy": ""
+                }
+              },
+              "da-15WordSummary-u-link": {
+                "value": {
+                  "body": "Syntha guides users on data ingestion methods, enabling advanced search via API or dashboard tools.",
+                  "format": "PLAIN",
+                  "md5": "2e729406b1ed5975fc44114ebf575b01",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-u-link": {
+                "value": {
+                  "body": "\"Getting Started with Syntha: A Beginner's Guide to Data Ingestion and Management\"",
+                  "format": "PLAIN",
+                  "md5": "b25498598a2b8c55a1f921f20e599a38",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "links": {
+              "link": {
+                "value": {
+                  "added": "2025-06-10T07:56:55.923804Z",
+                  "headers": {},
+                  "cookies": {},
+                  "uri": "https://docs.syntha.progress.com/docs/ingestion/intro#",
+                  "language": "",
+                  "localstorage": {},
+                  "css_selector": "",
+                  "xpath": "",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "generics": {
+              "title": {
+                "value": "Getting Started | Syntha Documentation Portal"
+              }
+            }
+          },
+          "fields": {
+            "/t/da-50to60Title-u-link": {
+              "paragraphs": {
+                "40f5bc39b8324f9eac93af76bd98f155/t/da-50to60Title-u-link/0-82": {
+                  "score": 0.34268152713775635,
+                  "score_type": "RERANKER",
+                  "order": 15,
+                  "text": " Getting Started with Syntha: A Beginner's Guide to Data Ingestion and Management ",
+                  "id": "40f5bc39b8324f9eac93af76bd98f155/t/da-50to60Title-u-link/0-82",
+                  "labels": [
+                    "/k/text"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 0,
+                    "start": 0,
+                    "end": 82,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            }
+          }
+        },
+        "c244ba79a6a24cb38e8ba3e2de8ba130": {
+          "id": "c244ba79a6a24cb38e8ba3e2de8ba130",
+          "slug": "c244ba79a6a24cb38e8ba3e2de8ba130",
+          "title": "Syntha Understanding API | Syntha Documentation Portal",
+          "summary": "",
+          "icon": "application/stf-link",
+          "thumbnail": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/c244ba79a6a24cb38e8ba3e2de8ba130/link/link/download/extracted/link_thumbnail",
+          "metadata": {
+            "metadata": {},
+            "language": "en",
+            "languages": [
+              "en"
+            ],
+            "status": "PROCESSED"
+          },
+          "usermetadata": {
+            "classifications": [],
+            "relations": []
+          },
+          "fieldmetadata": [],
+          "computedmetadata": {
+            "field_classifications": [
+              {
+                "field": {
+                  "field_type": "link",
+                  "field": "link"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "API"
+                  }
+                ]
+              }
+            ]
+          },
+          "created": "2025-06-10T07:58:44.922811",
+          "modified": "2025-06-10T07:58:44.922820",
+          "last_seqid": 0,
+          "queue": "private",
+          "hidden": false,
+          "origin": {
+            "source_id": "",
+            "url": "https://docs.syntha.progress.com/docs/nua-api#tag/Predict",
+            "metadata": {},
+            "tags": [],
+            "collaborators": [],
+            "filename": "",
+            "related": [],
+            "path": "",
+            "source": "API"
+          },
+          "data": {
+            "texts": {
+              "da-50to60Title-a-title": {
+                "value": {
+                  "body": "\"Syntha Understanding API Documentation | Comprehensive Guide to Features, Integration & Usage\"",
+                  "format": "PLAIN",
+                  "md5": "76ec04a2cf1dac874f2a6bd51d07673a",
+                  "extract_strategy": ""
+                }
+              },
+              "da-ResourceMerchandiser-u-link": {
+                "value": {
+                  "body": "{\"title\": \"Syntha Understanding API Documentation\", \"purpose\": \"Provides a comprehensive reference for the Syntha Understanding API.\", \"ideal_audience\": [\"Developers\", \"Technical Pre-Sales\", \"Integration Specialists\"], \"value_to_audience\": \"This document serves as a detailed guide for developers and technical teams to understand and integrate the Syntha Understanding API effectively.\", \"sales_activation_tip\": \"Share this document with technical teams during the integration planning phase to ensure they have all necessary API details.\", \"key_message_points\": [\"Comprehensive API reference for Syntha Understanding.\", \"Covers endpoints for processing, training, and prediction.\", \"Includes detailed parameter and response descriptions.\", \"Supports integration with various models and tasks.\", \"Provides examples for successful implementation.\"], \"confidence_level_to_share\": \"High\", \"link\": \"https://{region-x}.{domain}/api/v1/processing/download\"}",
+                  "format": "JSON",
+                  "md5": "778a0101e4752dcdc8c09edf4dad7e8a",
+                  "extract_strategy": ""
+                }
+              },
+              "da-15WordSummary-u-link": {
+                "value": {
+                  "body": "Syntha Understanding API documentation provides detailed endpoints for data processing, predictive modeling, and knowledge management.",
+                  "format": "PLAIN",
+                  "md5": "81cf604cb6f5c75f723bd4191ba90b9e",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-u-link": {
+                "value": {
+                  "body": "\"Comprehensive Guide to Syntha Understanding API: Features, Endpoints, and Integration | Syntha Documentation Portal\"",
+                  "format": "PLAIN",
+                  "md5": "d5489cb9a12155c4f0dcc2f04088f6e8",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "links": {
+              "link": {
+                "value": {
+                  "added": "2025-06-10T07:58:44.922913Z",
+                  "headers": {},
+                  "cookies": {},
+                  "uri": "https://docs.syntha.progress.com/docs/nua-api#tag/Predict",
+                  "language": "",
+                  "localstorage": {},
+                  "css_selector": "",
+                  "xpath": "",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "generics": {
+              "title": {
+                "value": "Syntha Understanding API | Syntha Documentation Portal"
+              }
+            }
+          },
+          "fields": {
+            "/a/title": {
+              "paragraphs": {
+                "c244ba79a6a24cb38e8ba3e2de8ba130/a/title/0-57": {
+                  "score": 0.19087480008602142,
+                  "score_type": "RERANKER",
+                  "order": 18,
+                  "text": "Syntha Understanding API | Syntha Documentation Portal",
+                  "id": "c244ba79a6a24cb38e8ba3e2de8ba130/a/title/0-57",
+                  "labels": [],
+                  "position": {
+                    "page_number": 0,
+                    "index": 0,
+                    "start": 0,
+                    "end": 57,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            }
+          }
+        },
+        "c88ea5a760654d3999c99954a63f3107": {
+          "id": "c88ea5a760654d3999c99954a63f3107",
+          "slug": "c88ea5a760654d3999c99954a63f3107",
+          "title": "Introduction | Syntha Documentation Portal",
+          "summary": "",
+          "icon": "application/stf-link",
+          "thumbnail": "/kb/886a82a2-b0d6-400d-9907-9b8c0567681a/resource/c88ea5a760654d3999c99954a63f3107/link/link/download/extracted/link_thumbnail",
+          "metadata": {
+            "metadata": {},
+            "language": "en",
+            "languages": [
+              "en"
+            ],
+            "status": "PROCESSED"
+          },
+          "usermetadata": {
+            "classifications": [],
+            "relations": []
+          },
+          "fieldmetadata": [],
+          "computedmetadata": {
+            "field_classifications": [
+              {
+                "field": {
+                  "field_type": "link",
+                  "field": "link"
+                },
+                "classifications": [
+                  {
+                    "labelset": "resourcetype",
+                    "label": "API"
+                  }
+                ]
+              }
+            ]
+          },
+          "created": "2025-06-10T07:57:35.290961",
+          "modified": "2025-06-10T07:57:35.290966",
+          "last_seqid": 0,
+          "queue": "private",
+          "hidden": false,
+          "origin": {
+            "source_id": "",
+            "url": "https://docs.syntha.progress.com/docs/develop/intro",
+            "metadata": {},
+            "tags": [],
+            "collaborators": [],
+            "filename": "",
+            "related": [],
+            "path": "",
+            "source": "API"
+          },
+          "data": {
+            "texts": {
+              "da-50to60Title-a-title": {
+                "value": {
+                  "body": "\"Introduction to Syntha Documentation Portal: Key Features, Navigation, and User Guide\"",
+                  "format": "PLAIN",
+                  "md5": "6519e945be06b0d7f23fe7e2b8b84c86",
+                  "extract_strategy": ""
+                }
+              },
+              "da-ResourceMerchandiser-u-link": {
+                "value": {
+                  "body": "{\"title\": \"Syntha Developer Tools Overview\", \"purpose\": \"Provides developers with API references for Syntha's features.\", \"ideal_audience\": [\"Developers\", \"Technical Teams\"], \"value_to_audience\": \"This document offers a comprehensive guide to Syntha's APIs, enabling developers to integrate and utilize Syntha's features effectively.\", \"sales_activation_tip\": \"Share this document with developers during technical discussions to highlight the breadth of Syntha's API capabilities.\", \"key_message_points\": [\"Syntha features are accessible through APIs.\", \"Covers all steps from data ingestion to search and RAG.\", \"Includes OpenAPI specifications for global, nua, nucliadb, and zone APIs.\"], \"confidence_level_to_share\": \"High\", \"link\": \"https://storage.googleapis.com/ncl-cdn-gcp-global-prod-1/api/global/v1/api.yaml\"}",
+                  "format": "JSON",
+                  "md5": "9242fce9e54eec318bc64a0f3680a12e",
+                  "extract_strategy": ""
+                }
+              },
+              "da-15WordSummary-u-link": {
+                "value": {
+                  "body": "Syntha Documentation Portal provides APIs for developers, covering data ingestion, search, RAG, and management.",
+                  "format": "PLAIN",
+                  "md5": "bf9807c6fb14b64e64194963c32dc681",
+                  "extract_strategy": ""
+                }
+              },
+              "da-50to60Title-u-link": {
+                "value": {
+                  "body": "\"Introduction to Syntha Documentation Portal: APIs, Tools, and Features for Developers\"",
+                  "format": "PLAIN",
+                  "md5": "c35f49f1ac572e6d1686200d45ac73bb",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "links": {
+              "link": {
+                "value": {
+                  "added": "2025-06-10T07:57:35.291017Z",
+                  "headers": {},
+                  "cookies": {},
+                  "uri": "https://docs.syntha.progress.com/docs/develop/intro",
+                  "language": "",
+                  "localstorage": {},
+                  "css_selector": "",
+                  "xpath": "",
+                  "extract_strategy": ""
+                }
+              }
+            },
+            "generics": {
+              "title": {
+                "value": "Introduction | Syntha Documentation Portal"
+              }
+            }
+          },
+          "fields": {
+            "/t/da-50to60Title-a-title": {
+              "paragraphs": {
+                "c88ea5a760654d3999c99954a63f3107/t/da-50to60Title-a-title/0-87": {
+                  "score": 0.13741667568683624,
+                  "score_type": "RERANKER",
+                  "order": 19,
+                  "text": " Introduction to Syntha Documentation Portal: Key Features, Navigation, and User Guide ",
+                  "id": "c88ea5a760654d3999c99954a63f3107/t/da-50to60Title-a-title/0-87",
+                  "labels": [
+                    "/k/text"
+                  ],
+                  "position": {
+                    "page_number": 0,
+                    "index": 0,
+                    "start": 0,
+                    "end": 87,
+                    "start_seconds": [],
+                    "end_seconds": []
+                  },
+                  "fuzzy_result": false,
+                  "page_with_visual": false,
+                  "reference": "",
+                  "is_a_table": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "relations": {
+        "entities": {}
+      },
+      "query": "What is syntha",
+      "rephrased_query": "What is Syntha?",
+      "total": 4588,
+      "page_number": 0,
+      "page_size": 20,
+      "next_page": true,
+      "shards": [
+        "ad66ce3f-ea75-4977-9499-c693e806497a"
+      ],
+      "autofilters": [],
+      "min_score": {
+        "semantic": 0.4,
+        "bm25": 0.0
+      },
+      "best_matches": [
+        "6d960f0c0fb7522cb9a7a5d3d6e954ba/t/da-ResourceMerchandiser-f-6d960f0c0fb7522cb9a7a5d3d6e954ba/678-820",
+        "a11b419d59224a7a9e5e08e6a3c6866e/t/da-ResourceMerchandiser-u-link/534-633",
+        "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/996-1202",
+        "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/220-707",
+        "84aa65edefff4c90a610ecc299e5de00/u/link/0-921",
+        "60720239e763428bb9f09955ae24ec55/u/link/0-921",
+        "17280bb550ef403d8babaa33f2f7320b/u/link/0-921",
+        "21cb6ed05f7a4076b63609f6f1d2e3c9/t/da-15WordSummary-u-link/0-115",
+        "60720239e763428bb9f09955ae24ec55/t/da-15WordSummary-u-link/0-130",
+        "d728e56a643354f1553ada7cad107d61/t/da-15WordSummary-f-d728e56a643354f1553ada7cad107d61/0-124",
+        "74da52ee4c4a4f16a36aece2e5838623/t/da-50to60Title-a-title/0-95",
+        "e8e6533395d9416081a2f9de96138d2d/t/da-50to60Title-a-title/0-95",
+        "12c6eea32957eeb369673ae8c2f8b973/t/da-15WordSummary-f-12c6eea32957eeb369673ae8c2f8b973/0-96",
+        "59f74d355bf2fa72a81d45b4190a1dc8/f/59f74d355bf2fa72a81d45b4190a1dc8/8318-8427",
+        "d728e56a643354f1553ada7cad107d61/t/da-50to60Title-f-d728e56a643354f1553ada7cad107d61/0-102",
+        "40f5bc39b8324f9eac93af76bd98f155/t/da-50to60Title-u-link/0-82",
+        "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/1405-1461",
+        "74da52ee4c4a4f16a36aece2e5838623/t/da-50to60Title-u-link/0-84",
+        "c244ba79a6a24cb38e8ba3e2de8ba130/a/title/0-57",
+        "c88ea5a760654d3999c99954a63f3107/t/da-50to60Title-a-title/0-87"
+      ]
+    },
+    "best_matches": [
+      {
+        "id": "6d960f0c0fb7522cb9a7a5d3d6e954ba/t/da-ResourceMerchandiser-f-6d960f0c0fb7522cb9a7a5d3d6e954ba/678-820"
+      },
+      {
+        "id": "a11b419d59224a7a9e5e08e6a3c6866e/t/da-ResourceMerchandiser-u-link/534-633"
+      },
+      {
+        "id": "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/996-1202"
+      },
+      {
+        "id": "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/220-707"
+      },
+      {
+        "id": "84aa65edefff4c90a610ecc299e5de00/u/link/0-921"
+      },
+      {
+        "id": "60720239e763428bb9f09955ae24ec55/u/link/0-921"
+      },
+      {
+        "id": "17280bb550ef403d8babaa33f2f7320b/u/link/0-921"
+      },
+      {
+        "id": "21cb6ed05f7a4076b63609f6f1d2e3c9/t/da-15WordSummary-u-link/0-115"
+      },
+      {
+        "id": "60720239e763428bb9f09955ae24ec55/t/da-15WordSummary-u-link/0-130"
+      },
+      {
+        "id": "d728e56a643354f1553ada7cad107d61/t/da-15WordSummary-f-d728e56a643354f1553ada7cad107d61/0-124"
+      },
+      {
+        "id": "74da52ee4c4a4f16a36aece2e5838623/t/da-50to60Title-a-title/0-95"
+      },
+      {
+        "id": "e8e6533395d9416081a2f9de96138d2d/t/da-50to60Title-a-title/0-95"
+      },
+      {
+        "id": "12c6eea32957eeb369673ae8c2f8b973/t/da-15WordSummary-f-12c6eea32957eeb369673ae8c2f8b973/0-96"
+      },
+      {
+        "id": "59f74d355bf2fa72a81d45b4190a1dc8/f/59f74d355bf2fa72a81d45b4190a1dc8/8318-8427"
+      },
+      {
+        "id": "d728e56a643354f1553ada7cad107d61/t/da-50to60Title-f-d728e56a643354f1553ada7cad107d61/0-102"
+      },
+      {
+        "id": "40f5bc39b8324f9eac93af76bd98f155/t/da-50to60Title-u-link/0-82"
+      },
+      {
+        "id": "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/1405-1461"
+      },
+      {
+        "id": "74da52ee4c4a4f16a36aece2e5838623/t/da-50to60Title-u-link/0-84"
+      },
+      {
+        "id": "c244ba79a6a24cb38e8ba3e2de8ba130/a/title/0-57"
+      },
+      {
+        "id": "c88ea5a760654d3999c99954a63f3107/t/da-50to60Title-a-title/0-87"
+      }
+    ]
+  }
+}

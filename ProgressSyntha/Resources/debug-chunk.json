@@ -1,0 +1,110 @@
+{
+  "item": {
+    "type": "debug",
+    "metadata": {
+      "prompt_context": [
+        "key_message_points 0 : Progress Syntha is a RAG-as-a-Service platform that transforms unstructured data into an AI-powered knowledge engine.",
+        "key_message_points 0 : Syntha is a RAG-based search engine that generates answers from documents.",
+        "No glue code. No data science team. No waiting six months to see value. Syntha is a plug-and-play, enterprise-grade, ISO-certified, and works across cloud, hybrid, or on-prem. It's not just smarter search.",
+        "Data is only an asset if it's accessible, actionable and used. Right now, most companies are data-rich and insight-poor. pour. Sitting on gold using teaspoons. Syntha changes that. Syntha is a retrieval augmented generation platform that turns all your content: documents, recordings, scanned forms, chat logs, into something your teams can talk to. Ask it a question and it doesn't guess. It retrieves relevant information, uses AI to synthesize a grounded answer and cites the source.",
+        "Syntha documentation | Syntha Documentation Portal .\n\n Syntha documentation | Syntha Documentation Portal\n\n[Skip to main content](#__docusaurus_skipToContent_fallback)\n\n[Image Syntha logo](/)[Search & RAG](/docs/rag/intro)[Data ingestion](/docs/ingestion/intro)[Management](/docs/management/intro)[Developer tools](/docs/develop/intro)[No code](/docs/no-code/intro)\n\n# Syntha, the RAG-as-a-Service platform\n\nSyntha automatically delivers AI search and Generative Answers on top of your unstructured data, and provides knowledge in the form of trusted answers, in any language, and from any data.\n\nSyntha allows you to customize your RAG pipeline and bring it directly to production.\nWith Syntha you can:\n\n* Index any type of data in any language.\n* Define your own retrieval strategy.\n* Use any LLM to gain insights and knowledge from your data.\n* Customize your prompt.\n\nCopyright © 2025 Progress. Built with Docusaurus.",
+        "Syntha documentation | Syntha Documentation Portal .\n\n Syntha documentation | Syntha Documentation Portal\n\n[Skip to main content](#__docusaurus_skipToContent_fallback)\n\n[Image Syntha logo](/)[Search & RAG](/docs/rag/intro)[Data ingestion](/docs/ingestion/intro)[Management](/docs/management/intro)[Developer tools](/docs/develop/intro)[No code](/docs/no-code/intro)\n\n# Syntha, the RAG-as-a-Service platform\n\nSyntha automatically delivers AI search and Generative Answers on top of your unstructured data, and provides knowledge in the form of trusted answers, in any language, and from any data.\n\nSyntha allows you to customize your RAG pipeline and bring it directly to production.\nWith Syntha you can:\n\n* Index any type of data in any language.\n* Define your own retrieval strategy.\n* Use any LLM to gain insights and knowledge from your data.\n* Customize your prompt.\n\nCopyright © 2025 Progress. Built with Docusaurus.",
+        "Syntha documentation | Syntha Documentation Portal .\n\n Syntha documentation | Syntha Documentation Portal\n\n[Skip to main content](#__docusaurus_skipToContent_fallback)\n\n[Image Syntha logo](/)[Search & RAG](/docs/rag/intro)[Data ingestion](/docs/ingestion/intro)[Management](/docs/management/intro)[Developer tools](/docs/develop/intro)[No code](/docs/no-code/intro)\n\n# Syntha, the RAG-as-a-Service platform\n\nSyntha automatically delivers AI search and Generative Answers on top of your unstructured data, and provides knowledge in the form of trusted answers, in any language, and from any data.\n\nSyntha allows you to customize your RAG pipeline and bring it directly to production.\nWith Syntha you can:\n\n* Index any type of data in any language.\n* Define your own retrieval strategy.\n* Use any LLM to gain insights and knowledge from your data.\n* Customize your prompt.\n\nCopyright © 2025 Progress. Built with Docusaurus.",
+        "Syntha enables centralized, customizable stored search configurations for efficient and flexible search management.",
+        "Syntha enables customizable AI-driven search, retrieval, and insights from unstructured multilingual data for seamless production.",
+        "Syntha transforms inaccessible data into actionable insights, empowering businesses with fast, precise, AI-driven solutions.",
+        "Getting Started with Syntha: Comprehensive Documentation Portal for Easy Setup and Navigation",
+        "Getting Started with Syntha: Comprehensive Documentation Portal for Easy Onboarding and Setup",
+        "Syntha API enables developers to ingest, search, and generate answers from custom data using AI.",
+        "This isn't search. \n \n This is intelligent. Connected. Personalized commerce. \n \n This… is Syntha.",
+        "Unlock Business Potential: Syntha Transforms Data into Actionable Insights with AI-Powered Precision",
+        "Getting Started with Syntha: A Beginner's Guide to Data Ingestion and Management",
+        "with precision. That's what Syntha delivers. Thank you.",
+        "Getting Started with Syntha: A Step-by-Step Guide to Data Ingestion and Management",
+        "Syntha Understanding API | Syntha Documentation Portal",
+        "Introduction to Syntha Documentation Portal: Key Features, Navigation, and User Guide"
+      ],
+      "predict_request": {
+        "question": "What is syntha",
+        "user_id": "173eaeeb-b1d7-4616-b966-6586ae2a8db6",
+        "retrieval": true,
+        "system": null,
+        "query_context": {
+          "6d960f0c0fb7522cb9a7a5d3d6e954ba/t/da-ResourceMerchandiser-f-6d960f0c0fb7522cb9a7a5d3d6e954ba/678-820": "key_message_points 0 : Progress Syntha is a RAG-as-a-Service platform that transforms unstructured data into an AI-powered knowledge engine.",
+          "a11b419d59224a7a9e5e08e6a3c6866e/t/da-ResourceMerchandiser-u-link/534-633": "key_message_points 0 : Syntha is a RAG-based search engine that generates answers from documents.",
+          "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/996-1202": "No glue code. No data science team. No waiting six months to see value. Syntha is a plug-and-play, enterprise-grade, ISO-certified, and works across cloud, hybrid, or on-prem. It's not just smarter search.",
+          "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/220-707": "Data is only an asset if it's accessible, actionable and used. Right now, most companies are data-rich and insight-poor. pour. Sitting on gold using teaspoons. Syntha changes that. Syntha is a retrieval augmented generation platform that turns all your content: documents, recordings, scanned forms, chat logs, into something your teams can talk to. Ask it a question and it doesn't guess. It retrieves relevant information, uses AI to synthesize a grounded answer and cites the source.",
+          "84aa65edefff4c90a610ecc299e5de00/u/link/0-921": "Syntha documentation | Syntha Documentation Portal .\n\n Syntha documentation | Syntha Documentation Portal\n\n[Skip to main content](#__docusaurus_skipToContent_fallback)\n\n[Image Syntha logo](/)[Search & RAG](/docs/rag/intro)[Data ingestion](/docs/ingestion/intro)[Management](/docs/management/intro)[Developer tools](/docs/develop/intro)[No code](/docs/no-code/intro)\n\n# Syntha, the RAG-as-a-Service platform\n\nSyntha automatically delivers AI search and Generative Answers on top of your unstructured data, and provides knowledge in the form of trusted answers, in any language, and from any data.\n\nSyntha allows you to customize your RAG pipeline and bring it directly to production.\nWith Syntha you can:\n\n* Index any type of data in any language.\n* Define your own retrieval strategy.\n* Use any LLM to gain insights and knowledge from your data.\n* Customize your prompt.\n\nCopyright © 2025 Progress. Built with Docusaurus.",
+          "60720239e763428bb9f09955ae24ec55/u/link/0-921": "Syntha documentation | Syntha Documentation Portal .\n\n Syntha documentation | Syntha Documentation Portal\n\n[Skip to main content](#__docusaurus_skipToContent_fallback)\n\n[Image Syntha logo](/)[Search & RAG](/docs/rag/intro)[Data ingestion](/docs/ingestion/intro)[Management](/docs/management/intro)[Developer tools](/docs/develop/intro)[No code](/docs/no-code/intro)\n\n# Syntha, the RAG-as-a-Service platform\n\nSyntha automatically delivers AI search and Generative Answers on top of your unstructured data, and provides knowledge in the form of trusted answers, in any language, and from any data.\n\nSyntha allows you to customize your RAG pipeline and bring it directly to production.\nWith Syntha you can:\n\n* Index any type of data in any language.\n* Define your own retrieval strategy.\n* Use any LLM to gain insights and knowledge from your data.\n* Customize your prompt.\n\nCopyright © 2025 Progress. Built with Docusaurus.",
+          "17280bb550ef403d8babaa33f2f7320b/u/link/0-921": "Syntha documentation | Syntha Documentation Portal .\n\n Syntha documentation | Syntha Documentation Portal\n\n[Skip to main content](#__docusaurus_skipToContent_fallback)\n\n[Image Syntha logo](/)[Search & RAG](/docs/rag/intro)[Data ingestion](/docs/ingestion/intro)[Management](/docs/management/intro)[Developer tools](/docs/develop/intro)[No code](/docs/no-code/intro)\n\n# Syntha, the RAG-as-a-Service platform\n\nSyntha automatically delivers AI search and Generative Answers on top of your unstructured data, and provides knowledge in the form of trusted answers, in any language, and from any data.\n\nSyntha allows you to customize your RAG pipeline and bring it directly to production.\nWith Syntha you can:\n\n* Index any type of data in any language.\n* Define your own retrieval strategy.\n* Use any LLM to gain insights and knowledge from your data.\n* Customize your prompt.\n\nCopyright © 2025 Progress. Built with Docusaurus.",
+          "21cb6ed05f7a4076b63609f6f1d2e3c9/t/da-15WordSummary-u-link/0-115": "Syntha enables centralized, customizable stored search configurations for efficient and flexible search management.",
+          "60720239e763428bb9f09955ae24ec55/t/da-15WordSummary-u-link/0-130": "Syntha enables customizable AI-driven search, retrieval, and insights from unstructured multilingual data for seamless production.",
+          "d728e56a643354f1553ada7cad107d61/t/da-15WordSummary-f-d728e56a643354f1553ada7cad107d61/0-124": "Syntha transforms inaccessible data into actionable insights, empowering businesses with fast, precise, AI-driven solutions.",
+          "74da52ee4c4a4f16a36aece2e5838623/t/da-50to60Title-a-title/0-95": "Getting Started with Syntha: Comprehensive Documentation Portal for Easy Setup and Navigation",
+          "e8e6533395d9416081a2f9de96138d2d/t/da-50to60Title-a-title/0-95": "Getting Started with Syntha: Comprehensive Documentation Portal for Easy Onboarding and Setup",
+          "12c6eea32957eeb369673ae8c2f8b973/t/da-15WordSummary-f-12c6eea32957eeb369673ae8c2f8b973/0-96": "Syntha API enables developers to ingest, search, and generate answers from custom data using AI.",
+          "59f74d355bf2fa72a81d45b4190a1dc8/f/59f74d355bf2fa72a81d45b4190a1dc8/8318-8427": "This isn't search. \n \n This is intelligent. Connected. Personalized commerce. \n \n This… is Syntha.",
+          "d728e56a643354f1553ada7cad107d61/t/da-50to60Title-f-d728e56a643354f1553ada7cad107d61/0-102": "Unlock Business Potential: Syntha Transforms Data into Actionable Insights with AI-Powered Precision",
+          "40f5bc39b8324f9eac93af76bd98f155/t/da-50to60Title-u-link/0-82": "Getting Started with Syntha: A Beginner's Guide to Data Ingestion and Management",
+          "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/1405-1461": "with precision. That's what Syntha delivers. Thank you.",
+          "74da52ee4c4a4f16a36aece2e5838623/t/da-50to60Title-u-link/0-84": "Getting Started with Syntha: A Step-by-Step Guide to Data Ingestion and Management",
+          "c244ba79a6a24cb38e8ba3e2de8ba130/a/title/0-57": "Syntha Understanding API | Syntha Documentation Portal",
+          "c88ea5a760654d3999c99954a63f3107/t/da-50to60Title-a-title/0-87": "Introduction to Syntha Documentation Portal: Key Features, Navigation, and User Guide"
+        },
+        "query_context_order": {
+          "6d960f0c0fb7522cb9a7a5d3d6e954ba/t/da-ResourceMerchandiser-f-6d960f0c0fb7522cb9a7a5d3d6e954ba/678-820": 0,
+          "a11b419d59224a7a9e5e08e6a3c6866e/t/da-ResourceMerchandiser-u-link/534-633": 1,
+          "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/996-1202": 2,
+          "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/220-707": 3,
+          "84aa65edefff4c90a610ecc299e5de00/u/link/0-921": 4,
+          "60720239e763428bb9f09955ae24ec55/u/link/0-921": 5,
+          "17280bb550ef403d8babaa33f2f7320b/u/link/0-921": 6,
+          "21cb6ed05f7a4076b63609f6f1d2e3c9/t/da-15WordSummary-u-link/0-115": 7,
+          "60720239e763428bb9f09955ae24ec55/t/da-15WordSummary-u-link/0-130": 8,
+          "d728e56a643354f1553ada7cad107d61/t/da-15WordSummary-f-d728e56a643354f1553ada7cad107d61/0-124": 9,
+          "74da52ee4c4a4f16a36aece2e5838623/t/da-50to60Title-a-title/0-95": 10,
+          "e8e6533395d9416081a2f9de96138d2d/t/da-50to60Title-a-title/0-95": 11,
+          "12c6eea32957eeb369673ae8c2f8b973/t/da-15WordSummary-f-12c6eea32957eeb369673ae8c2f8b973/0-96": 12,
+          "59f74d355bf2fa72a81d45b4190a1dc8/f/59f74d355bf2fa72a81d45b4190a1dc8/8318-8427": 13,
+          "d728e56a643354f1553ada7cad107d61/t/da-50to60Title-f-d728e56a643354f1553ada7cad107d61/0-102": 14,
+          "40f5bc39b8324f9eac93af76bd98f155/t/da-50to60Title-u-link/0-82": 15,
+          "d728e56a643354f1553ada7cad107d61/f/d728e56a643354f1553ada7cad107d61/1405-1461": 16,
+          "74da52ee4c4a4f16a36aece2e5838623/t/da-50to60Title-u-link/0-84": 17,
+          "c244ba79a6a24cb38e8ba3e2de8ba130/a/title/0-57": 18,
+          "c88ea5a760654d3999c99954a63f3107/t/da-50to60Title-a-title/0-87": 19
+        },
+        "chat_history": [],
+        "truncate": true,
+        "user_prompt": null,
+        "citations": true,
+        "citation_threshold": null,
+        "generative_model": null,
+        "max_tokens": null,
+        "query_context_images": {},
+        "prefer_markdown": false,
+        "json_schema": null,
+        "rerank_context": false,
+        "top_k": 20,
+        "format_prompt": true,
+        "seed": null
+      }
+    },
+    "metrics": {
+      "main_query": {
+        "query_parse": 0.6003731620003236,
+        "index_search": 0.011645458987914026,
+        "results_merge": 0.37582716401084326
+      },
+      "hybrid_retrieval": {
+        "main_query": 0.9883194150024792
+      },
+      "context_building": {},
+      "ask": {
+        "retrieval": 0.9884942880016752,
+        "context_building": 0.00007777099381200969,
+        "stream_start": 0.8242246890004026,
+        "stream_predict_answer": 2.8515790940000443
+      }
+    }
+  }
+}

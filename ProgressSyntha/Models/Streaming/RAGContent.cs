@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
-namespace ProgressSyntha;
+namespace ProgressSyntha.Models.Streaming;
 
+// When Syntha responds with a stream of content, it can be one of several types.
+// This class serves as the base for all content types that can be returned in a streaming response.
+// The Polymorphic discriminator is used to determine the specific type of content being returned.
+// This allows us to handle different types of content in a unified way while still being able to
+// differentiate between them based on the "type" property.
+// Example: { "type": "answer", "text": "This is the answer content." }
 [JsonPolymorphic(TypeDiscriminatorPropertyName = "type")]
 [JsonDerivedType(typeof(AnswerContent), typeDiscriminator: "answer")]
 [JsonDerivedType(typeof(RetrievalContent), typeDiscriminator: "retrieval")]
@@ -14,6 +15,8 @@ namespace ProgressSyntha;
 [JsonDerivedType(typeof(StatusContent), typeDiscriminator: "status")]
 [JsonDerivedType(typeof(MetaDataContent), typeDiscriminator: "metadata")]
 [JsonDerivedType(typeof(DebugContent), typeDiscriminator: "debug")]
+// TODO: JSON samples of AugmentedContent have not been verified yet.
+[JsonDerivedType(typeof(AugmentedContext), typeDiscriminator: "augmented_context")]
 
 public class RAGContent {
 	/// <summary>Gets or sets the raw representation of the content from an underlying implementation.</summary>
@@ -27,45 +30,4 @@ public class RAGContent {
 
 	public string? Type { get; set; }
 
-}
-
-public class AnswerContent : RAGContent
-{
-	public string? Text { get; set; }
-}
-
-public class RetrievalContent : RAGContent
-{
-	public Results Results { get; set; }
-}
-
-public class StatusContent : RAGContent
-{
-	public string? Status { get; set; }
-	public int Code { get; set; }
-}
-
-public class CitationsContent : RAGContent
-{
-	public Dictionary<string, object[]> Citations { get; set; } = new();
-}
-
-public class MetaDataContent : RAGContent
-{
-	public Tokens? Tokens { get; set; }
-	public Timings? Timings { get; set; }
-}
-
-public class Tokens
-{
-	public int Input { get; set; }
-	public int Output { get; set; }
-	public double InputNuclia { get; set; }
-	public double OutputNuclia { get; set; }
-}
-
-public class Timings
-{
-	public double GenerativeFirstChunk { get; set; }
-	public double GenerativeTotal { get; set; }
 }
